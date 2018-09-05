@@ -26,11 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>//Setup navigation grid
-for (a=1; a&lt;32; a++)
+for (a=1; a&lt;16; a++)
 {
-    for (b=1; b&lt;24; b++)
+    for (b=1; b&lt;12; b++)
     {
-        instance_create(32*a,32*b,object_nav_node)
+        instance_create(64*a,64*b,object_nav_node)
     }
 }
 </string>
