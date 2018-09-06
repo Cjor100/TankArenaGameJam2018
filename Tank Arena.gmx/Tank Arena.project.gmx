@@ -7,17 +7,25 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprite_nav_grid</sprite>
+    <sprite>sprites\sprite_menu_select</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts"/>
+  <scripts name="scripts">
+    <script>scripts\menu_script.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\font_menu</font>
+  </fonts>
   <objects name="objects">
     <objects name="bot">
       <object>objects\object_nav_node</object>
       <object>objects\object_bot</object>
     </objects>
+    <object>objects\obj_menu</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_menu</room>
     <room>rooms\room_test_map</room>
   </rooms>
   <help>
