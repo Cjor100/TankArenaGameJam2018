@@ -22,7 +22,7 @@
       <object>objects\object_bot</object>
     </objects>
     <objects name="obsticles">
-      <object>objects\object_wall</object>
+      <object>objects\object_wall_parent</object>
     </objects>
   </objects>
   <rooms name="rooms">
