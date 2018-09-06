@@ -23,10 +23,12 @@
       <object>objects\object_bot</object>
     </objects>
     <object>objects\obj_menu</object>
+    <object>objects\obj_tutorial</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\room_test_map</room>
+    <room>rooms\room_credits</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
