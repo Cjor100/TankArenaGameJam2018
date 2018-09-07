@@ -8,7 +8,7 @@
   <sprites name="sprites">
     <sprites name="debug">
       <sprite>sprites\sprite_wall</sprite>
-      <sprite>sprites\sprite_nav_grid</sprite>
+      <sprite>sprites\sprite_tank</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -18,15 +18,15 @@
   </scripts>
   <objects name="objects">
     <objects name="bot">
-      <object>objects\object_nav_node</object>
+      <object>objects\object_nav_grid</object>
       <object>objects\object_bot</object>
     </objects>
     <objects name="obsticles">
-      <object>objects\object_wall_parent</object>
+      <object>objects\object_wall</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room_test_map</room>
+    <room>rooms\map_test_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -2,11 +2,6 @@
 open = ds_list_create() //if the current node hasnt been checked
 closed = ds_list_create() //if the current node has been checked
 path = ds_list_create() //the path the ai will take
-adjacent[0]=0
-adjacent[1]=0
-adjacent[2]=0
-adjacent[3]=0
-adjacent[4]=0
 current=0
 end_node=0
 start_node=0
@@ -16,6 +11,7 @@ with object_nav_node
     {
        h=round(point_distance(x,0,(end_node).x,0)+round(point_distance(0,y,0,(end_node).y)))
     }
+    
 //Pathfinding start
 ds_list_add(open,start_node)
 while (ds_list_size(open)!=0)
@@ -72,5 +68,65 @@ while (ds_list_size(open)!=0)
             break
         }
     
-    
+    //Check adjacent nodes
+    for (a=0;a<=3;a++)
+        {
+            if (adjacent[a]!=-1)
+                {
+                    if ((adjacent[a]).state==1) || (ds_list_find_index(closed,adjacent[a])!=null)
+                        {
+                            continue
+                        }
+                    if ((adjacent[a]).length!=0 && current.length+1<(adjacent[a]).length)
+                        {
+                            (adjacent[a]).lenght=(current).length+1
+                            (adjacent[a]).cost=((adjacent[a]).length+(adjacent[a]).distance)
+                            (adjacent[a]).parent=current
+                            if (ds_list_find_index(closed,adjacent[a])!=null)
+                                {
+                                    ds_list_add(open,adjacent[a])
+                                }
+                            
+                        }
+                }
+        }
     }
+    
+    //Find the path
+    current=end_node
+    while ((current).parent!=-1)
+        {
+            //Assign adjacent navgrid
+            if ((current+1)<=instance_number(object_nav_node)-1 && ((current).x-64==(current-1).x))
+                adjacent[0]=current+1 //right
+            else
+                adjacent[0]=-1
+            if ((current-1)>=0 && ((current).x-64==(current-1).x))
+                adjacent[1]=current-1 //left
+            else
+                adjacent[1]=-1
+            if ((current+64)<=instance_number(object_nav_node)-1 && ((current).y+64==(current+64).y))
+                adjacent[2]=current+64 //up
+            else
+                adjacent[2]=-1
+            if ((current-64)>=0 && ((current).y-64==(current-64).y))
+                adjacent[3]=current-64 //down
+            else
+                adjacent[3]=-1
+            
+            for (a=0; a<=3; a++)
+                {
+                    if (adjacent[a]!=-1)
+                      {
+                        if ((current).parent==adjacent[a])
+                            {
+                            ds_list_add(path,adjacent[a])
+                            current=adjacent[a]
+                            }
+                        if (adjacent[a]==start)
+                            {
+                            break
+                            }
+                      }
+                }
+        }
