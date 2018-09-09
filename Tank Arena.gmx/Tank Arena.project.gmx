@@ -6,26 +6,33 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprites name="debug">
-      <sprite>sprites\sprite_wall</sprite>
-      <sprite>sprites\sprite_tank</sprite>
-    </sprites>
+    <sprite>sprites\sprite_menu_select</sprite>
+    <sprite>sprites\sprite_tank</sprite>
+    <sprite>sprites\sprite_wall</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\script_pathfind.gml</script>
+    <script>scripts\menu_script.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font_menu</font>
+  </fonts>
   <objects name="objects">
-    <objects name="bot">
-      <object>objects\object_nav_grid</object>
-      <object>objects\object_bot</object>
+    <objects name="Bot">
+      <object>objects\obj_bot</object>
+      <object>objects\obj_nav_grid</object>
     </objects>
-    <objects name="obsticles">
+    <objects name="Obsticles">
       <object>objects\object_wall</object>
+    </objects>
+    <objects name="Menu">
+      <object>objects\obj_menu</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_menu</room>
+    <room>rooms\room_credits</room>
     <room>rooms\room_test_map</room>
   </rooms>
   <help>
