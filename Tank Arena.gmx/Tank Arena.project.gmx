@@ -7,6 +7,8 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprite_menu_select</sprite>
+    <sprite>sprites\sprite_tank</sprite>
+    <sprite>sprites\sprite_wall</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -17,12 +19,21 @@
     <font>fonts\font_menu</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_menu</object>
-    <object>objects\obj_tutorial</object>
+    <objects name="Bot">
+      <object>objects\obj_bot</object>
+      <object>objects\obj_nav_grid</object>
+    </objects>
+    <objects name="Obsticles">
+      <object>objects\object_wall</object>
+    </objects>
+    <objects name="Menu">
+      <object>objects\obj_menu</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\room_credits</room>
+    <room>rooms\room_test_map</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
