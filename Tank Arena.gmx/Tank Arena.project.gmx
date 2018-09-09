@@ -7,8 +7,11 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprite_menu_select</sprite>
-    <sprite>sprites\sprite_tank</sprite>
-    <sprite>sprites\sprite_wall</sprite>
+    <sprites name="debug">
+      <sprite>sprites\sprite_tank</sprite>
+      <sprite>sprites\sprite_nav_node</sprite>
+      <sprite>sprites\sprite_wall</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -21,6 +24,7 @@
   <objects name="objects">
     <objects name="Bot">
       <object>objects\obj_bot</object>
+      <object>objects\obj_nav_node</object>
     </objects>
     <objects name="Obsticles">
       <object>objects\obj_wall</object>
