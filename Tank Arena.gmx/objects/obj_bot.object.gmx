@@ -25,8 +25,22 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Create path
+            <string>// Create Grid
+cell_width = 64
+cell_height = 64
+
+hcells = room_width div cell_width
+vcells = room_height div cell_height
+
+global.grid = mp_grid_create(0,0,hcells,vcells,cell_width,cell_height)
+
+// Register obsticles
+mp_grid_add_instances(global.grid,obj_wall,true)
+
+//Create path
 path = path_add()
+
+//mp_grid_destroy(global.grid)
 </string>
           </argument>
         </arguments>

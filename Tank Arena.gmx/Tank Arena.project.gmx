@@ -21,10 +21,9 @@
   <objects name="objects">
     <objects name="Bot">
       <object>objects\obj_bot</object>
-      <object>objects\obj_nav_grid</object>
     </objects>
     <objects name="Obsticles">
-      <object>objects\object_wall</object>
+      <object>objects\obj_wall</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_menu</object>
