@@ -30,11 +30,15 @@
       <object>objects\obj_menu</object>
       <object>objects\obj_credits</object>
     </objects>
+    <objects name="Game_Mechanics">
+      <object>objects\mech_obj</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\room_credits</room>
     <room>rooms\room_test_map</room>
+    <room>rooms\room_game_over</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
