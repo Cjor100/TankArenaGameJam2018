@@ -8,33 +8,6 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>enemyCount = 2; //How many enemies are left
-playerKills = 0; //How many kills the player has
-global.playerHP = 100; //Tracks the players health
-
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -52,14 +25,43 @@ global.playerHP = 100; //Tracks the players health
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var leaveGame = max(keyboard_check_pressed(vk_escape), 0);
-if(leaveGame == 1){ game_end();}
+            <string>if(keyboard_check_pressed(vk_escape)){ game_end();}
+if(keyboard_check_pressed(vk_shift)){ room_goto(room_menu);}
+if(keyboard_check_pressed(vk_enter)){ room_goto(room_map1);}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_halign(fa_left); //Sets up horizontal allignment
+draw_set_valign(fa_middle); //Sets up verticle allignment
+draw_set_font(font_gameOver); //Sets up the selected font
+draw_set_color(c_white); // Sets the font color
 
-if(enemyCount == 0){ room_goto_next();} //Switch this to be the next Room/Arena
+draw_text(250, 200, "GAME OVER");
 
-if(keyboard_check_released(ord('C'))){ enemyCount--;}
+draw_set_font(font_menu);
 
-if(global.playerHP &lt;= 0){ room_goto(room_game_over);}
+draw_text(100, 500, "Press [ESC] to quit.");
+draw_text(100, 550, "Press [Shift] to return to the main menu.");
+draw_text(100, 600, "Press [Enter] to restart game.");
 </string>
           </argument>
         </arguments>

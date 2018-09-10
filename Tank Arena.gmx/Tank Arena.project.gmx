@@ -17,6 +17,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_menu</font>
+    <font>fonts\font_gameOver</font>
   </fonts>
   <objects name="objects">
     <objects name="Bot">
@@ -29,6 +30,7 @@
     <objects name="Menu">
       <object>objects\obj_menu</object>
       <object>objects\obj_credits</object>
+      <object>objects\obj_gameOver</object>
     </objects>
     <objects name="Game_Mechanics">
       <object>objects\mech_obj</object>
@@ -37,8 +39,11 @@
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\room_credits</room>
-    <room>rooms\room_test_map</room>
     <room>rooms\room_game_over</room>
+    <rooms name="Game Maps">
+      <room>rooms\room_map1</room>
+      <room>rooms\room_map2</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

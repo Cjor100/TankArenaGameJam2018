@@ -1,6 +1,6 @@
 switch(mpos){
 case 0://Play
-room_goto(room_test_map);
+room_goto(room_map1);
 break;
 case 1: //Tutorial
 //Don't have a tutorial map yet.
