@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Setup navigation grid
+            <string>//Variables
+fire_right=false
+fire_left=false
+fire_up=false
+fire_down=false
+
+//Setup navigation grid
 for (a=0; a&lt;12; a++)
 {
     for (b=0; b&lt;16; b++)
@@ -72,7 +78,60 @@ path = path_add()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>//Find current navgrid
+instanceid = instance_nearest((x div 64)*64+32,(y div 64)*64+32,obj_nav_node) 
+Nav_ID = ((instanceid).ID)
+
+//Raytrace for player
+for (R=0; R&lt;16; R++)//Right raytrace
+    {
+        if ((instanceid+R).ID mod 16==0)
+            break
+        else if (instanceid+R).blocked==true
+            break
+        else if (instanceid+R).player==true
+            {
+                fire_right=true
+                break
+            }
+    }
+for (L=0; L&lt;16; L++)//Left raytrace
+    {
+        if (((instanceid-L).ID-1) mod 16==0)
+            break
+        else if (instanceid-L).blocked==true
+            break
+        else if (instanceid-L).player==true
+            {
+                fire_right=true
+                break
+            }
+    }
+for (U=0; U&lt;16; U++)//Up raytrace
+    {
+        if (((instanceid-(U*16)).ID-1)&lt;16)
+            break
+        else if (instanceid-(U*16)).blocked==true
+            break
+        else if (instanceid-(U*16)).player==true
+            {
+                fire_right=true
+                break
+            }
+    }
+for (D=0; D&lt;16; D++)//Down raytrace
+    {
+        if (((instanceid+(D*16)).ID-1)&gt;176)
+            break
+        else if (instanceid+(D*16)).blocked==true
+            break
+        else if (instanceid+(D*16)).player==true
+            {
+                fire_right=true
+                break
+            }
+    }
+</string>
           </argument>
         </arguments>
       </action>

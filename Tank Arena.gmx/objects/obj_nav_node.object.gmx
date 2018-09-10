@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>ID = instance_number(obj_nav_node)
-
+blocked=false
+player=false
 </string>
           </argument>
         </arguments>
