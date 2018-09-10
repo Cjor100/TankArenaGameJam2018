@@ -105,15 +105,15 @@ draw_set_valign(fa_middle); //Sets up verticle allignment
 draw_set_font(font_bigText); //Sets up the title font
 draw_set_color(c_white); //Sets the menu buttons with a white color
 
-draw_text(100, 100, "Tank Arena");
+draw_text(200, 100, "Tank Arena");
 
 draw_set_font(font_menu); //Sets up the selected font
 var i;
 for(i = 0; i&lt; array_length_1d(menu); i+=1){ //Creates a loop for the array to draw out the menu
-draw_text(x + space, y+(i*space), string(menu[i]));//Places each menu item at it's designated spot
+draw_text(x + (space*5), y+(i*space), string(menu[i]));//Places each menu item at it's designated spot
 }
 
-draw_sprite(sprite_index, 0, x+16, y + ((mpos * space) - 15)); //Draws the sprite
+draw_sprite(sprite_index, 0, x+260, y + ((mpos * space) - 15)); //Draws the sprite
 </string>
           </argument>
         </arguments>
