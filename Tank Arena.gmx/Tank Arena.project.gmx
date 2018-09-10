@@ -17,6 +17,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_menu</font>
+    <font>fonts\font_bigText</font>
     <font>fonts\font_gameOver</font>
   </fonts>
   <objects name="objects">

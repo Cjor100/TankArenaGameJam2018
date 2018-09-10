@@ -102,9 +102,12 @@ if(push_select == 1) menu_script();
             <kind>1</kind>
             <string>draw_set_halign(fa_left); //Sets up horizontal allignment
 draw_set_valign(fa_middle); //Sets up verticle allignment
-draw_set_font(font_menu); //Sets up the selected font
+draw_set_font(font_bigText); //Sets up the title font
 draw_set_color(c_white); //Sets the menu buttons with a white color
 
+draw_text(100, 100, "Tank Arena");
+
+draw_set_font(font_menu); //Sets up the selected font
 var i;
 for(i = 0; i&lt; array_length_1d(menu); i+=1){ //Creates a loop for the array to draw out the menu
 draw_text(x + space, y+(i*space), string(menu[i]));//Places each menu item at it's designated spot
