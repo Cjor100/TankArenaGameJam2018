@@ -115,7 +115,7 @@ path = path_add()
 instanceid = instance_nearest((x div 64)*64+32,(y div 64)*64+32,obj_nav_node) 
 Nav_ID = ((instanceid).ID)
 
-//Raytrace for player
+//Raytrace
 for (R=0; R&lt;16; R++)//Right raytrace
     {
         if ((instanceid+R).ID mod 16==0)
@@ -217,6 +217,24 @@ else if (fire_down &amp;&amp; can_fire)
         (instance_nearest(x,y,obj_bot_bullet)).vspeed=+bullet_speed
         can_fire=false
         alarm[0]=60
+    }
+
+//Movement mechanism
+if ((instance_nearest(x,y,obj_player)).R&gt;=3)
+    {
+        adjacent[0]=(instance_nearest(x,y,obj_player)).id+3
+    }
+if ((instance_nearest(x,y,obj_player)).L&gt;=3)
+    {
+        adjacent[1]=(instance_nearest(x,y,obj_player)).id-3
+    }
+if ((instance_nearest(x,y,obj_player)).U&gt;=3)
+    {
+        adjacent[2]=(instance_nearest(x,y,obj_player)).id-12
+    }
+if ((instance_nearest(x,y,obj_player)).D&gt;=3)
+    {
+        adjacent[3]=(instance_nearest(x,y,obj_player)).id+12
     }
 </string>
           </argument>
