@@ -218,6 +218,23 @@ else if (fire_down &amp;&amp; can_fire)
         can_fire=false
         alarm[0]=60
     }
+    
+//Movement
+for (R=0; R&lt;3; R++)//Right raytrace
+    {
+        if ((global.playerid+R).ID mod 16==0)
+            {
+                break
+            }
+        else if (global.playerid+R).blocked==true
+            {
+                break
+            }
+    }
+if (R&gt;=3)
+    {
+        adjacent[0]=(global.playerid+3)
+    }
 </string>
           </argument>
         </arguments>

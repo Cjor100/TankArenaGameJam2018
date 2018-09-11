@@ -30,7 +30,10 @@ blocked=false
 player=false
 
 if (ID==164)
+    {
     player=true
+    global.playerid=id
+    }
 </string>
           </argument>
         </arguments>
