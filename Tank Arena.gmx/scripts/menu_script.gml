@@ -3,7 +3,7 @@ case 0://Play
 room_goto(room_map1);
 break;
 case 1: //Tutorial
-//Don't have a tutorial map yet.
+room_goto(room_tutorial);
 break;
 case 2: //Credits
 room_goto(room_credits);

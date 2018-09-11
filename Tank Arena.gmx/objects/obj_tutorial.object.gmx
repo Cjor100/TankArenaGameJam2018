@@ -25,21 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>credits[0] = "Tank Arena Team";
-credits[1] = "Lead Developer:";
-credits[2] = "Chris Major";
-credits[3] = "Programmers:";
-credits[4] = "Eric Mazza";
-credits[5] = "Alix Rose";
-credits[6] = "Art Design:";
-credits[7] = "Carlos Dominguez";
-credits[8] = "Level Design:";
-credits[9] = "Nicolas Astroza";
-credits[10] = "Sound Design:";
-credits[11] = "Fuad Mohamed";
+            <string>current_set = 0;
 
-credit_space = 50;
-
+instructions[0] = "Use W,A,S,D keys to move.";
+instructions[1] = "Use [Space] to shoot.";
+instructions[2] = "Avoid enemy bullets.";
+instructions[3] = "Hit enemies with your bullets.";
+instructions[4] = "Kill all enemies in a level to advance.";
+instructions[5] = "Keep pressing [Shift] to see instructions again.";
+instructions[6] = "Press [Esc] to exit to menu.";
 </string>
           </argument>
         </arguments>
@@ -62,14 +56,10 @@ credit_space = 50;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>y --;
+            <string>if(keyboard_check_pressed(vk_shift)){current_set++;}
+if(current_set &gt; 6){current_set = 0;}
 
-var return_menu = 0;
-return_menu = max(keyboard_check_pressed(vk_shift), 0);
-
-if(return_menu == 1){
-room_goto(room_menu);
-}
+if(keyboard_check_pressed(vk_escape)){room_goto(room_menu);}
 </string>
           </argument>
         </arguments>
@@ -95,18 +85,10 @@ room_goto(room_menu);
             <string>draw_set_halign(fa_left); //Sets up horizontal allignment
 draw_set_valign(fa_middle); //Sets up verticle allignment
 draw_set_font(font_menu); //Sets up the selected font
+draw_set_color(c_black); //Sets up the text color\
 
-var i;
-for(i = 0; i&lt; array_length_1d(credits); i++){ //Creates a loop for the array to draw out the menu
-draw_set_color(c_white); //Sets the credits text
-if(i==1 || i==3 || i == 6 || i == 8 || i== 10 || i== 12){
-draw_set_color(c_red);
-}
-draw_text(250, (y+credit_space*i), string(credits[i]));//Places each menu item at it's designated spot
-}
-
-draw_set_color(c_red); //Sets the credits text
-draw_text( 700, 750, "Press [Shift] to exit");
+draw_text(x, y,  instructions[current_set]);
+draw_text(x, y+50, "Press [Shift] to advance");
 </string>
           </argument>
         </arguments>

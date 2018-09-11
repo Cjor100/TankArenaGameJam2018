@@ -9,6 +9,7 @@
     <sprite>sprites\sprite_menu_select</sprite>
     <sprite>sprites\sprite_tank</sprite>
     <sprite>sprites\sprite_wall</sprite>
+    <sprite>sprites\sprite_player</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -32,13 +33,19 @@
       <object>objects\obj_menu</object>
       <object>objects\obj_credits</object>
       <object>objects\obj_gameOver</object>
+      <object>objects\obj_tutorial</object>
     </objects>
     <objects name="Game_Mechanics">
       <object>objects\mech_obj</object>
+      <objects name="Player Objects">
+        <object>objects\obj_player</object>
+        <object>objects\obj_bullet</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
+    <room>rooms\room_tutorial</room>
     <room>rooms\room_credits</room>
     <room>rooms\room_game_over</room>
     <rooms name="Game Maps">
