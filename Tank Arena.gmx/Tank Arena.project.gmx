@@ -9,8 +9,10 @@
     <sprite>sprites\sprite_menu_select</sprite>
     <sprites name="debug">
       <sprite>sprites\sprite_tank</sprite>
+      <sprite>sprites\sprite_tank_centered</sprite>
       <sprite>sprites\sprite_nav_node</sprite>
       <sprite>sprites\sprite_wall</sprite>
+      <sprite>sprites\sprite_bullet</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -25,6 +27,7 @@
     <objects name="Bot">
       <object>objects\obj_bot</object>
       <object>objects\obj_nav_node</object>
+      <object>objects\obj_bot_bullet</object>
     </objects>
     <objects name="Obsticles">
       <object>objects\obj_wall</object>
@@ -35,8 +38,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
-    <room>rooms\room_credits</room>
     <room>rooms\room_test_map</room>
+    <room>rooms\room_credits</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
