@@ -81,7 +81,11 @@ path = path_add()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>path_start(path,4,path_action_stop,false)
+            <string>    if (mp_grid_path(grid,path,x,y,gx,gy,1))
+        {
+            path_end()
+            path_start(path,4,path_action_stop,false)
+        }
 </string>
           </argument>
         </arguments>
@@ -267,8 +271,8 @@ if (!ds_list_empty(adjacent))
     }
 ox=gx
 oy=gy
-gx=ds_list_find_value(adjacent,minvalue).x
-gy=ds_list_find_value(adjacent,minvalue).y
+gx = (ds_list_find_value(adjacent,minvalue).x div 64)*64+32
+gy = (ds_list_find_value(adjacent,minvalue).y div 64)*64+32
 
 //Move to navgrid
 if (ox!=gx || oy!=gy)
@@ -300,6 +304,30 @@ if (ox!=gx || oy!=gy)
           <argument>
             <kind>1</kind>
             <string>if(botHP &lt;= 0){ instance_destroy();}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_player">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>path_end()
+alarm[1]=random(10)
 </string>
           </argument>
         </arguments>
@@ -376,7 +404,7 @@ if (mp_grid_path(grid,path,x,y,mx,my,1))
           <argument>
             <kind>1</kind>
             <string>draw_self()
-//draw_rectangle(gx,gy,gx+64,gy+64,false)
+draw_rectangle(gx-32,gy-32,gx+32,gy+32,false)
 </string>
           </argument>
         </arguments>

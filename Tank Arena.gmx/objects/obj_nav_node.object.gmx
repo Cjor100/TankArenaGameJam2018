@@ -77,10 +77,10 @@ player=false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*draw_text(x+32,y+32,ID)
+            <string>draw_text(x+32,y+32,ID)
 draw_set_halign(true)
 draw_set_valign(true)
-draw_self()*/
+draw_self()
 </string>
           </argument>
         </arguments>
