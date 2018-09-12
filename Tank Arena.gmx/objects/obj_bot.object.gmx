@@ -254,11 +254,21 @@ if (adjacent[0]!=0 || adjacent[1]!=0 || adjacent[2]!=0 || adjacent[3]!=0)
             {
                 gx = ((adjacent[0]).x div 64)*64+32
                 gy = ((adjacent[0]).y div 64)*64+32
-                
-                if (mp_grid_path(grid,path,x,y,gx,gy,1))
-                    {
-                        path_start(path,4,path_action_stop,false)
-                    }  
+            }
+        if (min(adjacentdistance[0],adjacentdistance[1],adjacentdistance[2],adjacentdistance[3])==adjacentdistance[1])
+            {
+                gx = ((adjacent[1]).x div 64)*64+32
+                gy = ((adjacent[1]).y div 64)*64+32
+            }
+        if (min(adjacentdistance[0],adjacentdistance[1],adjacentdistance[2],adjacentdistance[3])==adjacentdistance[2])
+            {
+                gx = ((adjacent[2]).x div 64)*64+32
+                gy = ((adjacent[2]).y div 64)*64+32
+            }
+        if (min(adjacentdistance[0],adjacentdistance[1],adjacentdistance[2],adjacentdistance[3])==adjacentdistance[3])
+            {
+                gx = ((adjacent[3]).x div 64)*64+32
+                gy = ((adjacent[3]).y div 64)*64+32
             }
     }
 </string>
