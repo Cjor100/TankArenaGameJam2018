@@ -114,10 +114,18 @@ attempt_forward=forward
 attempt_down=down
 
 //Move
+if(y &gt; 32){
 if(attempt_forward){y-= player_speed;player_direction = 90;}
+}
+if(y &lt; 736){
 if(attempt_down){y+=player_speed;player_direction = 270;}
+}
+if(x &gt; 32){
 if(attempt_left){ x-=player_speed;player_direction = 180;}
+}
+if(x &lt; 992){
 if(attempt_right){ x+=player_speed;player_direction = 0;}
+}
 
 if(right &amp;&amp; forward){ player_direction=45;} //Up-Right angle control
 if(forward &amp;&amp; left){ player_direction=135;} //Up-Left angle control
