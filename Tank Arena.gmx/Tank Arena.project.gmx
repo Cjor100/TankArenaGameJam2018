@@ -12,7 +12,6 @@
       <sprite>sprites\sprite_bot_centered_debug</sprite>
       <sprite>sprites\sprite_nav_node</sprite>
       <sprite>sprites\sprite_wall_debug</sprite>
-      <sprite>sprites\sprite_bullet_debug</sprite>
       <sprite>sprites\sprite_player_debug</sprite>
       <sprite>sprites\sprite_door</sprite>
     </sprites>
