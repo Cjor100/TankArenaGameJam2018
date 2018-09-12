@@ -33,6 +33,11 @@ left = false;
 down = false;
 right = false;
 
+R=0
+L=0
+U=0
+D=0
+
 timer = 0;
 </string>
           </argument>
@@ -93,6 +98,77 @@ if(start_time){
 timer--;
 }
 
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Find current navgrid
+instanceid = instance_nearest((x div 64)*64+32,(y div 64)*64+32,obj_nav_node) 
+Nav_ID = ((instanceid).ID)
+instanceid.player=true
+
+//Raytrace
+for (R=0; R&lt;16; R++)//Right raytrace
+    {
+        if ((instanceid+R).ID mod 16==0)
+            {
+                break
+            }
+        else if (instanceid+R).blocked==true
+            {
+                break
+            }
+    }
+for (L=0; L&lt;16; L++)//Left raytrace
+    {
+        if (((instanceid-L).ID-1) mod 16==0)
+            {
+                break
+            }
+        else if (instanceid-L).blocked==true
+            {
+                break
+            }
+    }
+for (U=0; U&lt;16; U++)//Up raytrace
+    {
+        if (((instanceid-(U*16)).ID)&lt;=16)
+            {
+                break
+            }
+        else if (instanceid-(U*16)).blocked==true
+            {
+                break
+            }
+    }
+for (D=0; D&lt;16; D++)//Down raytrace
+    {
+        if (((instanceid+(D*16)).ID)&gt;=177)
+            {
+                break
+            }
+        else if (instanceid+(D*16)).blocked==true
+            {
+                break
+            }
+    }
 
 </string>
           </argument>
