@@ -31,9 +31,11 @@ instructions[0] = "Use W,A,S,D keys to move.";
 instructions[1] = "Use [Space] to shoot.";
 instructions[2] = "Avoid enemy bullets.";
 instructions[3] = "Hit enemies with your bullets.";
-instructions[4] = "Kill all enemies in a level to advance.";
-instructions[5] = "Keep pressing [Shift] to see instructions again.";
-instructions[6] = "Press [Esc] to exit to menu.";
+instructions[4] = "Enemies take 4 hits to die";
+instructions[5] = "You can take 20 hits before you die"
+instructions[6] = "Kill all enemies in a level to advance.";
+instructions[7] = "Keep pressing [Shift] to see instructions again.";
+instructions[8] = "Press [Esc] to exit to menu.";
 </string>
           </argument>
         </arguments>
@@ -57,9 +59,13 @@ instructions[6] = "Press [Esc] to exit to menu.";
           <argument>
             <kind>1</kind>
             <string>if(keyboard_check_pressed(vk_shift)){current_set++;}
-if(current_set &gt; 6){current_set = 0;}
+if(current_set &gt; 8){current_set = 0;}
 
 if(keyboard_check_pressed(vk_escape)){room_goto(room_menu);}
+
+if(current_set == 3 &amp;&amp; instance_number(obj_bot) == 0){
+instance_create(64*6, 64*6, obj_bot);
+}
 </string>
           </argument>
         </arguments>
