@@ -36,6 +36,7 @@ adjacent[0]=0
 adjacent[1]=0
 adjacent[2]=0
 adjacent[3]=0
+botHP = 100;
 
 
 //Align to grid
@@ -231,7 +232,7 @@ if ((instance_nearest(x,y,obj_player)).D&gt;=3)
         adjacent[3]=(instance_nearest(x,y,obj_player)).id+12
     }
 
-
+if(botHP &lt;= 0){ instance_destroy();}
 </string>
           </argument>
         </arguments>

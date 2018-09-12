@@ -41,7 +41,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>(instance_nearest(x, y,obj_bot)).botHP -= 25;
+</string>
           </argument>
         </arguments>
       </action>

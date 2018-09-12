@@ -55,10 +55,12 @@
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\room_credits</room>
-    <room>rooms\room_map1</room>
-    <room>rooms\room2</room>
-    <room>rooms\room3</room>
     <room>rooms\room_tutorial</room>
+    <rooms name="Maps">
+      <room>rooms\room_map1</room>
+      <room>rooms\room_map2</room>
+      <room>rooms\room_map3</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

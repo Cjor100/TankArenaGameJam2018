@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>enemyCount = 2; //How many enemies are left
-playerKills = 0; //How many kills the player has
+            <string>playerKills = 0; //How many kills the player has
 global.playerHP = 100; //Tracks the players health
 </string>
           </argument>
@@ -53,7 +52,7 @@ global.playerHP = 100; //Tracks the players health
             <string>var leaveGame = max(keyboard_check_pressed(vk_escape), 0);
 if(leaveGame == 1){ game_end();}
 
-if(enemyCount == 0){ room_goto_next();} //Switch this to be the next Room/Arena
+if(instance_number(obj_bot) == 0){ room_goto_next();} //Switch this to be the next Room/Arena
 
 if(keyboard_check_released(ord('C'))){ global.playerHP-=10;}
 
