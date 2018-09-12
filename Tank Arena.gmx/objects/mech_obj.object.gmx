@@ -86,7 +86,8 @@ draw_set_color(c_green);
 }else{
 draw_set_color(c_red);
 }
-draw_text(health_player_x, health_player_y, string(global.playerHP));
+//draw_text(health_player_x, health_player_y, string(global.playerHP));
+draw_healthbar(health_player_x-32,health_player_y,health_player_x+32,health_player_y+24,global.playerHP,false,false,false,false,true,true)
 
 </string>
           </argument>
