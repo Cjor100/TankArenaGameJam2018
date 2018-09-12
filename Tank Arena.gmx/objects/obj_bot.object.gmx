@@ -217,19 +217,19 @@ else if (fire_down &amp;&amp; can_fire)
 //Get Adjacent nodes
 if ((instance_nearest(x,y,obj_player)).R&gt;=3)
     {
-        adjacent[0]=(instance_nearest(x,y,obj_player)).id+3
+        adjacent[0]=(instance_nearest(x,y,obj_player)).instanceid+3
     }
 if ((instance_nearest(x,y,obj_player)).L&gt;=3)
     {
-        adjacent[1]=(instance_nearest(x,y,obj_player)).id-3
+        adjacent[1]=(instance_nearest(x,y,obj_player)).instanceid-3
     }
 if ((instance_nearest(x,y,obj_player)).U&gt;=3)
     {
-        adjacent[2]=(instance_nearest(x,y,obj_player)).id-12
+        adjacent[2]=(instance_nearest(x,y,obj_player)).instanceid-48
     }
 if ((instance_nearest(x,y,obj_player)).D&gt;=3)
     {
-        adjacent[3]=(instance_nearest(x,y,obj_player)).id+12
+        adjacent[3]=(instance_nearest(x,y,obj_player)).instanceid+48
     }
 
 if(botHP &lt;= 0){ instance_destroy();}

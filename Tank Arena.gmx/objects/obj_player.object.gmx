@@ -157,6 +157,7 @@ for (R=0; R&lt;16; R++)//Right raytrace
             }
         else if (instanceid+R).blocked==true
             {
+                R--
                 break
             }
     }
@@ -168,6 +169,7 @@ for (L=0; L&lt;16; L++)//Left raytrace
             }
         else if (instanceid-L).blocked==true
             {
+                L--
                 break
             }
     }
@@ -179,6 +181,7 @@ for (U=0; U&lt;16; U++)//Up raytrace
             }
         else if (instanceid-(U*16)).blocked==true
             {
+                U--
                 break
             }
     }
@@ -189,7 +192,8 @@ for (D=0; D&lt;16; D++)//Down raytrace
                 break
             }
         else if (instanceid+(D*16)).blocked==true
-            {
+            {  
+                D--
                 break
             }
     }
