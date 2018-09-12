@@ -11,6 +11,7 @@
       <sprite>sprites\Bullet</sprite>
       <sprite>sprites\down_part_</sprite>
       <sprite>sprites\environment</sprite>
+      <sprite>sprites\environment_2</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
