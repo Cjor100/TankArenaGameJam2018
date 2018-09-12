@@ -12,6 +12,7 @@
       <sprite>sprites\sprite_bot_centered_debug</sprite>
       <sprite>sprites\sprite_nav_node</sprite>
       <sprite>sprites\sprite_wall_debug</sprite>
+      <sprite>sprites\sprite_bullet_debug</sprite>
       <sprite>sprites\sprite_player_debug</sprite>
       <sprite>sprites\sprite_door</sprite>
     </sprites>
@@ -19,6 +20,10 @@
     <sprites name="Player">
       <sprite>sprites\sprite_player</sprite>
       <sprite>sprites\sprite_player_moving</sprite>
+    </sprites>
+    <sprites name="Bot">
+      <sprite>sprites\sprite_bot</sprite>
+      <sprite>sprites\sprite_bot_moving</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>

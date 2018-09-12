@@ -28,15 +28,14 @@
             <string>credits[0] = "Tank Arena Team";
 credits[1] = "Lead Developer:";
 credits[2] = "Chris Major";
-credits[3] = "Programmers:";
+credits[3] = "Programmer:";
 credits[4] = "Eric Mazza";
-credits[5] = "Alix Rose";
-credits[6] = "Art Design:";
-credits[7] = "Carlos Dominguez";
-credits[8] = "Level Design:";
-credits[9] = "Nicolas Astroza";
-credits[10] = "Sound Design:";
-credits[11] = "Fuad Mohamed";
+credits[5] = "Art Design:";
+credits[6] = "Carlos Dominguez";
+credits[7] = "Level Design:";
+credits[8] = "Nicolas Astroza";
+credits[9] = "Sound Design:";
+credits[10] = "Fuad Mohamed";
 
 credit_space = 50;
 
