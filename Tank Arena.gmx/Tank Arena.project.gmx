@@ -7,9 +7,15 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprite_menu_select</sprite>
-    <sprite>sprites\sprite_tank</sprite>
-    <sprite>sprites\sprite_wall</sprite>
-    <sprite>sprites\sprite_player</sprite>
+    <sprites name="debug">
+      <sprite>sprites\sprite_tank</sprite>
+      <sprite>sprites\sprite_tank_centered</sprite>
+      <sprite>sprites\sprite_nav_node</sprite>
+      <sprite>sprites\sprite_wall_debug</sprite>
+      <sprite>sprites\sprite_bullet_debug</sprite>
+      <sprite>sprites\sprite_player_debug</sprite>
+      <sprite>sprites\sprite_door</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -24,34 +30,34 @@
   <objects name="objects">
     <objects name="Bot">
       <object>objects\obj_bot</object>
-      <object>objects\obj_nav_grid</object>
+      <object>objects\obj_nav_node</object>
+      <object>objects\obj_bot_bullet</object>
     </objects>
     <objects name="Obsticles">
-      <object>objects\object_wall</object>
+      <object>objects\obj_wall</object>
     </objects>
     <objects name="Menu">
-      <object>objects\obj_menu</object>
-      <object>objects\obj_credits</object>
       <object>objects\obj_gameOver</object>
       <object>objects\obj_tutorial</object>
+      <object>objects\obj_menu</object>
+      <object>objects\obj_credits</object>
     </objects>
-    <objects name="Game_Mechanics">
+    <objects name="Mechanics">
+      <object>objects\obj_door</object>
       <object>objects\mech_obj</object>
-      <objects name="Player Objects">
-        <object>objects\obj_player</object>
-        <object>objects\obj_bullet</object>
-      </objects>
+    </objects>
+    <objects name="Player">
+      <object>objects\obj_player</object>
+      <object>objects\obj_bullet</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
-    <room>rooms\room_tutorial</room>
     <room>rooms\room_credits</room>
-    <room>rooms\room_game_over</room>
-    <rooms name="Game Maps">
-      <room>rooms\room_map1</room>
-      <room>rooms\room_map2</room>
-    </rooms>
+    <room>rooms\room_map1</room>
+    <room>rooms\room2</room>
+    <room>rooms\room3</room>
+    <room>rooms\room_tutorial</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
