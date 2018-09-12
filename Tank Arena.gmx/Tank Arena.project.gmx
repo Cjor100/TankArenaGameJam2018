@@ -56,6 +56,7 @@
     <room>rooms\room_menu</room>
     <room>rooms\room_credits</room>
     <room>rooms\room_tutorial</room>
+    <room>rooms\room_game_over</room>
     <rooms name="Maps">
       <room>rooms\room_map1</room>
       <room>rooms\room_map2</room>
