@@ -404,7 +404,7 @@ if (mp_grid_path(grid,path,x,y,mx,my,1))
           <argument>
             <kind>1</kind>
             <string>draw_self()
-draw_rectangle(gx-32,gy-32,gx+32,gy+32,false)
+//draw_rectangle(gx-32,gy-32,gx+32,gy+32,false)
 </string>
           </argument>
         </arguments>
