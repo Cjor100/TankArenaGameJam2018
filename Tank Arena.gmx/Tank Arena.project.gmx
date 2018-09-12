@@ -14,6 +14,7 @@
       <sprite>sprites\sprite_wall_debug</sprite>
       <sprite>sprites\sprite_bullet_debug</sprite>
       <sprite>sprites\sprite_player_debug</sprite>
+      <sprite>sprites\sprite_player_centered</sprite>
       <sprite>sprites\sprite_door</sprite>
     </sprites>
   </sprites>

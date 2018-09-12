@@ -25,9 +25,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Block navgrid underneath 
-//(instance_nearest((x div 64)*64+32,(y div 64)*64+32,obj_nav_node)).blocked=true
+            <string>if (instance_number(obj_nav_node)==0)
+{
+    //Setup navigation grid
+    for (a=0; a&lt;12; a++)
+    {
+        for (b=0; b&lt;16; b++)
+        {
+            instance_create(64*b,64*a,obj_nav_node)
+        }
+    }
+}
+if (instance_number(mech_obj)==0)
+    {
+        instance_create(x,y,mech_obj)
+    }
 
+//Block navgrid underneath
+(instance_nearest((x div 64)*64+32,(y div 64)*64+32,obj_nav_node)).blocked=true
 </string>
           </argument>
         </arguments>
