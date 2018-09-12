@@ -81,13 +81,10 @@ if(global.playerHP &lt;= 0){ room_goto(room_game_over);}
             <kind>1</kind>
             <string>health_player_x = (obj_player.x);
 health_player_y = (obj_player.y + 50);
-if(global.playerHP &gt;30){
-draw_set_color(c_green);
-}else{
-draw_set_color(c_red);
-}
-//draw_text(health_player_x, health_player_y, string(global.playerHP));
-draw_healthbar(health_player_x-32,health_player_y,health_player_x+32,health_player_y+24,global.playerHP,false,false,false,false,true,true)
+
+draw_set_color(c_black);
+draw_text(health_player_x-82, health_player_y, "HP:");
+draw_healthbar(health_player_x-32,health_player_y-10,health_player_x+32,health_player_y+3,global.playerHP,c_black,c_red,c_green,0,true,true);
 
 </string>
           </argument>

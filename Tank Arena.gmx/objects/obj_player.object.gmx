@@ -281,7 +281,7 @@ if (D==0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.playerHP -= 5;
+            <string>global.playerHP -= 10;
 </string>
           </argument>
         </arguments>
