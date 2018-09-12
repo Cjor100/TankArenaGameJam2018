@@ -33,9 +33,10 @@ instructions[2] = "Avoid enemy bullets.";
 instructions[3] = "Hit enemies with your bullets.";
 instructions[4] = "Enemies take 4 hits to die";
 instructions[5] = "You can take 20 hits before you die"
-instructions[6] = "Kill all enemies in a level to advance.";
-instructions[7] = "Keep pressing [Shift] to see instructions again.";
-instructions[8] = "Press [Esc] to exit to menu.";
+instructions[6] = "Kill all enemies in a level to unlock the door.";
+instructions[7] = "Go through the door to advance.";
+instructions[8] = "Keep pressing [Shift] to see instructions again.";
+instructions[9] = "Go through the door to exit to menu.";
 
 spawned = false;
 </string>
@@ -61,7 +62,7 @@ spawned = false;
           <argument>
             <kind>1</kind>
             <string>if(keyboard_check_pressed(vk_shift)){current_set++;}
-if(current_set &gt; 8){current_set = 0;}
+if(current_set &gt; 9){current_set = 0;}
 
 if(keyboard_check_pressed(vk_escape)){room_goto(room_menu);}
 
