@@ -39,6 +39,14 @@ down = false;
 right = false;
 
 timer = 0;
+
+y_store = 0;
+x_store = 0;
+
+no_up = false;
+no_down = false;
+no_left = false;
+no_right = false;
 </string>
           </argument>
         </arguments>
@@ -88,22 +96,29 @@ D=0
             <string>//Forward player control
 if(keyboard_check_pressed(ord('W'))){ forward = true; }
 if(keyboard_check_released(ord('W'))){forward = false;}
-if(forward){y-= player_speed; player_direction = 90;}
+if(U &gt; 0){
+if(forward){y-= player_speed;player_direction = 90;}
+}
 //Down player control
 if(keyboard_check_pressed(ord('S'))){ down = true; }
 if(keyboard_check_released(ord('S'))){ down = false;}
+if(D &gt; 0){
 if(down){y+=player_speed;player_direction = 270;}
+}
 //Left player control
 if(keyboard_check_pressed(ord('A'))){ left = true; }
 if(keyboard_check_released(ord('A'))){ left = false;}
+if(L &gt; 0){
 if(left){ x-=player_speed;player_direction = 180;}
+}
 //Right player control
-
 if(keyboard_check_pressed(ord('D'))){ right = true; }
 if(keyboard_check_released(ord('D'))){ right = false;}
+if(R &gt; 0){
 if(right){ x+=player_speed;player_direction = 0;}
+}
 
-if(right &amp;&amp; forward){ player_direction=45;} //Up-Right angle control
+if(right &amp;&amp; forward){ player_direction=45; } //Up-Right angle control
 if(forward &amp;&amp; left){ player_direction=135;} //Up-Left angle control
 if(left &amp;&amp; down){player_direction=225;} //Down-Left angle control
 if(down &amp;&amp; right){ player_direction=315;} //Down-Right angle control
