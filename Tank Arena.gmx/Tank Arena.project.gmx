@@ -8,14 +8,13 @@
   <sprites name="sprites">
     <sprites name="Tank">
       <sprite>sprites\sprite_tank_turret</sprite>
+      <sprite>sprites\Bullet</sprite>
+      <sprite>sprites\down_part_</sprite>
+      <sprite>sprites\environment</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts"/>
-  <fonts name="fonts"/>
-  <objects name="objects"/>
-  <rooms name="rooms"/>
   <help>
     <rtf>help.rtf</rtf>
   </help>
