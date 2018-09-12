@@ -32,14 +32,6 @@ fire_up=false
 fire_down=false
 can_fire=true
 bullet_speed=6
-<<<<<<< HEAD
-=======
-adjacent[0]=0
-adjacent[1]=0
-adjacent[2]=0
-adjacent[3]=0
-
->>>>>>> Chris
 
 //Align to grid
 sprite_index = sprite_tank_centered
@@ -123,11 +115,7 @@ path = path_add()
 instanceid = instance_nearest((x div 64)*64+32,(y div 64)*64+32,obj_nav_node) 
 Nav_ID = ((instanceid).ID)
 
-<<<<<<< HEAD
 //Raytrace for player
-=======
-//Raytrace
->>>>>>> Chris
 for (R=0; R&lt;16; R++)//Right raytrace
     {
         if ((instanceid+R).ID mod 16==0)
@@ -230,57 +218,6 @@ else if (fire_down &amp;&amp; can_fire)
         can_fire=false
         alarm[0]=60
     }
-<<<<<<< HEAD
-=======
-
-//Movement mechanism
-//Get Adjacent nodes
-if ((instance_nearest(x,y,obj_player)).R&gt;=3)
-    {
-        adjacent[0]=(instance_nearest(x,y,obj_player)).id+3
-    }
-if ((instance_nearest(x,y,obj_player)).L&gt;=3)
-    {
-        adjacent[1]=(instance_nearest(x,y,obj_player)).id-3
-    }
-if ((instance_nearest(x,y,obj_player)).U&gt;=3)
-    {
-        adjacent[2]=(instance_nearest(x,y,obj_player)).id-12
-    }
-if ((instance_nearest(x,y,obj_player)).D&gt;=3)
-    {
-        adjacent[3]=(instance_nearest(x,y,obj_player)).id+12
-    }
-
-if (adjacent[0]!=0 || adjacent[1]!=0 || adjacent[2]!=0 || adjacent[3]!=0)
-    {
-        //Sort distance
-        adjacentdistance[0]=distance_to_point((adjacent[0]).x,(adjacent[0]).y)
-        adjacentdistance[1]=distance_to_point((adjacent[1]).x,(adjacent[1]).y)
-        adjacentdistance[2]=distance_to_point((adjacent[2]).x,(adjacent[2]).y)
-        adjacentdistance[3]=distance_to_point((adjacent[3]).x,(adjacent[3]).y)
-        if (min(adjacentdistance[0],adjacentdistance[1],adjacentdistance[2],adjacentdistance[3])==adjacentdistance[0])
-            {
-                gx = ((adjacent[0]).x div 64)*64+32
-                gy = ((adjacent[0]).y div 64)*64+32
-            }
-        if (min(adjacentdistance[0],adjacentdistance[1],adjacentdistance[2],adjacentdistance[3])==adjacentdistance[1])
-            {
-                gx = ((adjacent[1]).x div 64)*64+32
-                gy = ((adjacent[1]).y div 64)*64+32
-            }
-        if (min(adjacentdistance[0],adjacentdistance[1],adjacentdistance[2],adjacentdistance[3])==adjacentdistance[2])
-            {
-                gx = ((adjacent[2]).x div 64)*64+32
-                gy = ((adjacent[2]).y div 64)*64+32
-            }
-        if (min(adjacentdistance[0],adjacentdistance[1],adjacentdistance[2],adjacentdistance[3])==adjacentdistance[3])
-            {
-                gx = ((adjacent[3]).x div 64)*64+32
-                gy = ((adjacent[3]).y div 64)*64+32
-            }
-    }
->>>>>>> Chris
 </string>
           </argument>
         </arguments>
@@ -303,17 +240,10 @@ if (adjacent[0]!=0 || adjacent[1]!=0 || adjacent[2]!=0 || adjacent[3]!=0)
         <arguments>
           <argument>
             <kind>1</kind>
-<<<<<<< HEAD
             <string>mx = (mouse_x div 64)*64+32
 my = (mouse_y div 64)*64+32
 
 if (mp_grid_path(grid,path,x,y,mx,my,1))
-=======
-            <string>gx = (mouse_x div 64)*64+32
-gy = (mouse_y div 64)*64+32
-
-if (mp_grid_path(grid,path,x,y,gx,gy,1))
->>>>>>> Chris
     {
         path_start(path,4,path_action_stop,false)
     }
