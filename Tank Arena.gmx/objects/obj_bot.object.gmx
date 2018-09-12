@@ -33,6 +33,7 @@ fire_down=false
 can_fire=true
 bullet_speed=6
 botHP = 100;
+adjacent=ds_list_create()
 
 
 //Align to grid
@@ -211,8 +212,7 @@ else if (fire_down &amp;&amp; can_fire)
 
 //Movement mechanism
 //Get Adjacent nodes
-adjacent=ds_list_create()
-ds_list_clear(adjacent)
+/*ds_list_clear(adjacent)
 if ((instance_nearest(x,y,obj_player)).R&gt;=3)
     {
         ds_list_add(adjacent,((instance_nearest(x,y,obj_player)).instanceid+3))
@@ -239,7 +239,16 @@ if (!ds_list_empty(adjacent))
                 if (ds_list_find_value(adjacent,a)&lt;=ds_list_find_value(adjacent,minvalue))
                     minvalue=a
             }
-    }
+    }*/
+//Movement
+/*adjacent[0]=0
+adjacent[1]=0
+adjacent[2]=0
+adjacent[3]=0
+if ((instance_nearest(x,y,obj_player)).R&gt;=3)
+    {
+        adjacent[0]=(instance_nearest(x,y,obj_player)).instanceid+3)
+    }*/
 </string>
           </argument>
         </arguments>
