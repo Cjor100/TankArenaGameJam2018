@@ -17,6 +17,9 @@
       <sprite>sprites\sprite_player_centered</sprite>
       <sprite>sprites\sprite_door</sprite>
     </sprites>
+    <sprite>sprites\Bullet</sprite>
+    <sprite>sprites\sprite_tank_final</sprite>
+    <sprite>sprites\sprite_tank_turret</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
