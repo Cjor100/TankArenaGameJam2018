@@ -80,8 +80,8 @@ if(global.playerHP &lt;= 0){ room_goto(room_game_over);}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>health_player_x = (obj_player.x+30);
-health_player_y = (obj_player.y + 80);
+            <string>health_player_x = (obj_player.x);
+health_player_y = (obj_player.y + 50);
 if(global.playerHP &gt;30){
 draw_set_color(c_green);
 }else{
