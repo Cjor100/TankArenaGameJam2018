@@ -33,14 +33,6 @@ left = false;
 down = false;
 right = false;
 
-<<<<<<< HEAD
-=======
-R=0
-L=0
-U=0
-D=0
-
->>>>>>> Eric
 timer = 0;
 </string>
           </argument>
@@ -106,8 +98,8 @@ timer--;
           </argument>
         </arguments>
       </action>
-<<<<<<< HEAD
-=======
+    </event>
+    <event eventtype="4" ename="obj_wall">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -124,62 +116,10 @@ timer--;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Find current navgrid
-instanceid = instance_nearest((x div 64)*64+32,(y div 64)*64+32,obj_nav_node) 
-Nav_ID = ((instanceid).ID)
-instanceid.player=true
-
-//Raytrace
-for (R=0; R&lt;16; R++)//Right raytrace
-    {
-        if ((instanceid+R).ID mod 16==0)
-            {
-                break
-            }
-        else if (instanceid+R).blocked==true
-            {
-                break
-            }
-    }
-for (L=0; L&lt;16; L++)//Left raytrace
-    {
-        if (((instanceid-L).ID-1) mod 16==0)
-            {
-                break
-            }
-        else if (instanceid-L).blocked==true
-            {
-                break
-            }
-    }
-for (U=0; U&lt;16; U++)//Up raytrace
-    {
-        if (((instanceid-(U*16)).ID)&lt;=16)
-            {
-                break
-            }
-        else if (instanceid-(U*16)).blocked==true
-            {
-                break
-            }
-    }
-for (D=0; D&lt;16; D++)//Down raytrace
-    {
-        if (((instanceid+(D*16)).ID)&gt;=177)
-            {
-                break
-            }
-        else if (instanceid+(D*16)).blocked==true
-            {
-                break
-            }
-    }
-
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
->>>>>>> Eric
     </event>
     <event eventtype="4" ename="obj_bot">
       <action>
