@@ -8,17 +8,19 @@
   <sprites name="sprites">
     <sprite>sprites\sprite_menu_select</sprite>
     <sprites name="debug">
-      <sprite>sprites\sprite_tank</sprite>
-      <sprite>sprites\sprite_tank_centered</sprite>
+      <sprite>sprites\sprite_bot_debug</sprite>
+      <sprite>sprites\sprite_bot_centered_debug</sprite>
       <sprite>sprites\sprite_nav_node</sprite>
       <sprite>sprites\sprite_wall_debug</sprite>
       <sprite>sprites\sprite_bullet_debug</sprite>
       <sprite>sprites\sprite_player_debug</sprite>
-      <sprite>sprites\sprite_player_centered</sprite>
       <sprite>sprites\sprite_door</sprite>
     </sprites>
     <sprite>sprites\Bullet</sprite>
-    <sprite>sprites\sprite_tank_final</sprite>
+    <sprites name="Player">
+      <sprite>sprites\sprite_player</sprite>
+      <sprite>sprites\sprite_player_moving</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
