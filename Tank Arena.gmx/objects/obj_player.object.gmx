@@ -249,11 +249,10 @@ for (D=0; D&lt;16; D++)//Down raytrace
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (hspeed=0 &amp;&amp; vspeed=0)
+            <string>/*if (hspeed=0 &amp;&amp; vspeed=0)
     sprite_index = sprite_player
 else
-    sprite_index = sprite_player_moving
-  sound_play(sound_move1);  
+    sprite_index = sprite_player_moving*/ 
 </string>
           </argument>
         </arguments>
@@ -279,10 +278,12 @@ if (x!=xprevious || y!=yprevious)
     {
         if !audio_is_playing(sound_move1)
             audio_play_sound(sound_move1,1,true)
+        sprite_index = sprite_player_moving
     }
 else
     {
         audio_stop_sound(sound_move1)
+        sprite_index = sprite_player
      }
 </string>
           </argument>
