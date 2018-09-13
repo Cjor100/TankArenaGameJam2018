@@ -25,6 +25,28 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>if !audio_is_playing(sound_idle2)
+    audio_play_sound(sound_idle2,1,true)
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>//Variables
 fire_right=false
 fire_left=false
@@ -61,6 +83,30 @@ mp_grid_add_instances(grid,obj_wall,true)
 path = path_add()
 
 //mp_grid_destroy(global.grid)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_stop_sound(sound_idle2)
+audio_stop_sound(sound_move2)
 </string>
           </argument>
         </arguments>
@@ -399,6 +445,36 @@ if (distance_to_object(obj_player)&lt;10)
             }
         global.playerHP -= 1;
     }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Sound
+if (path_index!=-1)
+    {
+        if !audio_is_playing(sound_move2)
+            audio_play_sound(sound_move2,1,true)
+    }
+else
+    {
+        audio_stop_sound(sound_move2)
+     }
 </string>
           </argument>
         </arguments>

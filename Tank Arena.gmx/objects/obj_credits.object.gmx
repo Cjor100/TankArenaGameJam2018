@@ -98,7 +98,7 @@ draw_set_font(font_menu); //Sets up the selected font
 var i;
 for(i = 0; i&lt; array_length_1d(credits); i++){ //Creates a loop for the array to draw out the menu
 draw_set_color(c_white); //Sets the credits text
-if(i==1 || i==3 || i == 6 || i == 8 || i== 10 || i== 12){
+if(i==1 || i==3 || i == 5 || i == 7 || i== 9 || i== 11){
 draw_set_color(c_red);
 }
 draw_text(250, (y+credit_space*i), string(credits[i]));//Places each menu item at it's designated spot

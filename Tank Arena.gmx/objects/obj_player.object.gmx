@@ -71,6 +71,7 @@ no_shoot = false;
 L=0
 U=0
 D=0
+audio_play_sound(sound_idle1,1,true)
 </string>
           </argument>
         </arguments>
@@ -253,6 +254,36 @@ for (D=0; D&lt;16; D++)//Down raytrace
 else
     sprite_index = sprite_player_moving
   sound_play(sound_move1);  
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Sound
+if (x!=xprevious || y!=yprevious)
+    {
+        if !audio_is_playing(sound_move1)
+            audio_play_sound(sound_move1,1,true)
+    }
+else
+    {
+        audio_stop_sound(sound_move1)
+     }
 </string>
           </argument>
         </arguments>

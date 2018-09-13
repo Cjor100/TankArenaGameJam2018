@@ -32,31 +32,16 @@ menu[3] = "Quit";
 
 space = 64; //This variable is for the set amount of space between each menu item
 mpos = 0; //This is the menu cursor position
+
+audio_stop_sound(sound_game_music)
+audio_stop_sound(sound_move1)
+audio_stop_sound(sound_move2)
+audio_stop_sound(sound_idle1)
+audio_stop_sound(sound_idle2)
+
+if !audio_is_playing(sound_menu_music)
+            audio_play_sound(sound_menu_music,1,true)
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>sound_menu_music</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -103,28 +88,6 @@ if(push_select == 1) menu_script();
 //This will run the menu script if a selection has been made.
 
 </string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="5">
-      <action>
-        <libid>1</libid>
-        <id>212</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_end_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>sound_menu_music</sound>
           </argument>
         </arguments>
       </action>

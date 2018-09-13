@@ -8,9 +8,12 @@
     <sound>sound\sound_fire1</sound>
     <sound>sound\sound_fire2</sound>
     <sound>sound\sound_move1</sound>
+    <sound>sound\sound_move2</sound>
     <sound>sound\sound_menu_select</sound>
     <sound>sound\sound_menu_music</sound>
     <sound>sound\sound_game_music</sound>
+    <sound>sound\sound_idle1</sound>
+    <sound>sound\sound_idle2</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite_menu_select</sprite>
