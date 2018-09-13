@@ -252,6 +252,7 @@ for (D=0; D&lt;16; D++)//Down raytrace
     sprite_index = sprite_player
 else
     sprite_index = sprite_player_moving
+  sound_play(sound_move1);  
 </string>
           </argument>
         </arguments>

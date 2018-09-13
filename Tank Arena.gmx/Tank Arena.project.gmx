@@ -4,7 +4,11 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound_fire1</sound>
+    <sound>sound\sound_move1</sound>
+    <sound>sound\sound_fire2</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite_menu_select</sprite>
     <sprites name="debug">
