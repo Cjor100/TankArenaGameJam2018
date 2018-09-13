@@ -328,7 +328,8 @@ if (D==0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>global.playerHP -= 2;
+</string>
           </argument>
         </arguments>
       </action>
