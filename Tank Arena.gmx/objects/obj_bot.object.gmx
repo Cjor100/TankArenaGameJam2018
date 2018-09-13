@@ -66,6 +66,30 @@ path = path_add()
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>can_move=true
+stuck=false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
@@ -353,40 +377,28 @@ else
     
 if (distance_to_object(obj_player)&lt;10)
     {
-        if (obj_player.right)
-            x+=5
-        if (obj_player.left)
-            x-=5
-        if (obj_player.forward)
-            y-=5
-        if (obj_player.down)
-            y+=5
+        if (point_distance(obj_player.x,0,x,0)&gt;10 &amp;&amp; R&gt;1)
+            {
+                path_end()
+                x+=5
+            }
+        if (point_distance(obj_player.x,0,x,0)&gt;10 &amp;&amp; L&gt;1)
+            {
+                path_end()
+                x-=5
+            }
+        if (point_distance(0,obj_player.y,0,y)&gt;10 &amp;&amp; U&gt;1)
+            {
+                path_end()
+                y-=5
+            }
+        if (point_distance(0,obj_player.y,0,y)&gt;10 &amp;&amp; D&gt;1)
+            {
+                path_end()
+                y+=5
+            }
         global.playerHP -= 1;
     }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_player">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-
 </string>
           </argument>
         </arguments>
