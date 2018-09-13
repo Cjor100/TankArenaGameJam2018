@@ -28,6 +28,7 @@
             <string>ID = instance_number(obj_nav_node)
 blocked=false
 player=false
+bot=false
 </string>
           </argument>
         </arguments>
@@ -54,6 +55,11 @@ player=false
     {
         if ((instance_nearest(x,y,obj_player)).Nav_ID!=ID)
             player=false   
+    }
+if (bot==true)
+    {
+        if (instance_number(obj_bot)&gt;0 &amp;&amp; (instance_nearest(x,y,obj_bot)).Nav_ID!=ID)
+            bot=false   
     }
 </string>
           </argument>
