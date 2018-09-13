@@ -27,7 +27,11 @@
             <kind>1</kind>
             <string>playerKills = 0; //How many kills the player has
 global.playerHP = 100; //Tracks the players health
-audio_stop_all()
+audio_stop_sound(sound_menu_music)
+audio_stop_sound(sound_move1)
+audio_stop_sound(sound_move2)
+audio_stop_sound(sound_idle1)
+audio_stop_sound(sound_idle2)
 if !audio_is_playing(sound_game_music)
             audio_play_sound(sound_game_music,1,true)
 </string>
