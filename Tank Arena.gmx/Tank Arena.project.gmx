@@ -6,10 +6,10 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\sound_fire1</sound>
-    <sound>sound\sound_move1</sound>
     <sound>sound\sound_fire2</sound>
-    <sound>sound\sound_menu_music</sound>
+    <sound>sound\sound_move1</sound>
     <sound>sound\sound_menu_select</sound>
+    <sound>sound\sound_menu_music</sound>
     <sound>sound\sound_game_music</sound>
   </sounds>
   <sprites name="sprites">
