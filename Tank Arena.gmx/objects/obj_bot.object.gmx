@@ -203,6 +203,89 @@ stuck=false
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>if(botHP &lt;= 0){ instance_destroy();}
+//Movement
+if (hspeed=0 &amp;&amp; vspeed=0)
+    sprite_index = sprite_bot
+else
+    sprite_index = sprite_bot_moving
+    
+    image_angle = direction-90;
+    
+if (distance_to_object(obj_player)&lt;10)
+    {
+        if (point_distance(obj_player.x,0,x,0)&gt;10 &amp;&amp; R&gt;1)
+            {
+                path_end()
+                x+=5
+            }
+        if (point_distance(obj_player.x,0,x,0)&gt;10 &amp;&amp; L&gt;1)
+            {
+                path_end()
+                x-=5
+            }
+        if (point_distance(0,obj_player.y,0,y)&gt;10 &amp;&amp; U&gt;1)
+            {
+                path_end()
+                y-=5
+            }
+        if (point_distance(0,obj_player.y,0,y)&gt;10 &amp;&amp; D&gt;1)
+            {
+                path_end()
+                y+=5
+            }
+        global.playerHP -= 1;
+    }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Sound
+if (path_index!=-1)
+    {
+        if !audio_is_playing(sound_move2)
+            audio_play_sound(sound_move2,1,true)
+    }
+else
+    {
+        audio_stop_sound(sound_move2)
+     }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>//Find current navgrid
 instanceid = instance_nearest((x div 64)*64+32,(y div 64)*64+32,obj_nav_node) 
 Nav_ID = ((instanceid).ID)
@@ -396,89 +479,6 @@ if ((ox!=gx || oy!=gy) &amp;&amp; can_move)
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(botHP &lt;= 0){ instance_destroy();}
-//Movement
-if (hspeed=0 &amp;&amp; vspeed=0)
-    sprite_index = sprite_bot
-else
-    sprite_index = sprite_bot_moving
-    
-    image_angle = direction-90;
-    
-if (distance_to_object(obj_player)&lt;10)
-    {
-        if (point_distance(obj_player.x,0,x,0)&gt;10 &amp;&amp; R&gt;1)
-            {
-                path_end()
-                x+=5
-            }
-        if (point_distance(obj_player.x,0,x,0)&gt;10 &amp;&amp; L&gt;1)
-            {
-                path_end()
-                x-=5
-            }
-        if (point_distance(0,obj_player.y,0,y)&gt;10 &amp;&amp; U&gt;1)
-            {
-                path_end()
-                y-=5
-            }
-        if (point_distance(0,obj_player.y,0,y)&gt;10 &amp;&amp; D&gt;1)
-            {
-                path_end()
-                y+=5
-            }
-        global.playerHP -= 1;
-    }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//Sound
-if (path_index!=-1)
-    {
-        if !audio_is_playing(sound_move2)
-            audio_play_sound(sound_move2,1,true)
-    }
-else
-    {
-        audio_stop_sound(sound_move2)
-     }
-</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="4" ename="obj_bot">
       <action>
@@ -564,7 +564,14 @@ if (mp_grid_path(grid,path,x,y,mx,my,1))
           <argument>
             <kind>1</kind>
             <string>draw_self()
-//draw_rectangle(gx-32,gy-32,gx+32,gy+32,false)
+if (botHP==100)
+    draw_sprite_ext(sprite_damaged,0,x,y,1,1,image_angle,c_white,1)
+if (botHP==75)
+    draw_sprite_ext(sprite_damaged,1,x,y,1,1,image_angle,c_white,1)
+if (botHP==50)
+    draw_sprite_ext(sprite_damaged,2,x,y,1,1,image_angle,c_white,1)
+if (botHP==25)
+    draw_sprite_ext(sprite_damaged,3,x,y,1,1,image_angle,c_white,1)
 </string>
           </argument>
         </arguments>

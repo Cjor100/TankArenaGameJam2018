@@ -19,6 +19,7 @@
     <sprites name="Mechanics">
       <sprite>sprites\sprite_menu_select</sprite>
       <sprite>sprites\sprite_bullet</sprite>
+      <sprite>sprites\sprite_tracer</sprite>
       <sprites name="Hatch">
         <sprite>sprites\sprite_hatch_closed</sprite>
         <sprite>sprites\sprite_hatch_open</sprite>
@@ -43,6 +44,7 @@
     <sprites name="Tank">
       <sprite>sprites\sprite_tank_moving_base</sprite>
       <sprite>sprites\sprite_tank_base</sprite>
+      <sprite>sprites\sprite_damaged</sprite>
     </sprites>
     <sprites name="Obsticles">
       <sprites name="Street">
@@ -96,8 +98,9 @@
       <object>objects\obj_nav_node</object>
       <object>objects\obj_bot_bullet</object>
     </objects>
-    <objects name="Obsticles">
+    <objects name="Miscellaneous ">
       <object>objects\obj_wall</object>
+      <object>objects\obj_tracer</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_gameOver</object>
