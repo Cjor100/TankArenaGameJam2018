@@ -13,6 +13,7 @@
     <sprite>sprites\Rock_</sprite>
     <sprite>sprites\Rock_2</sprite>
     <sprite>sprites\Rock_6</sprite>
+    <sprite>sprites\tree_2</sprite>
     <sprite>sprites\Rock_3</sprite>
     <sprite>sprites\Rock_4</sprite>
     <sprite>sprites\Rock_5</sprite>
@@ -24,11 +25,22 @@
     <sprite>sprites\Hatch_close</sprite>
     <sprite>sprites\Hatch_open</sprite>
     <sprite>sprites\Street</sprite>
+    <sprite>sprites\streett_5</sprite>
+    <sprite>sprites\steet_4</sprite>
     <sprite>sprites\street_2</sprite>
     <sprite>sprites\street_4</sprite>
     <sprite>sprites\street_3</sprite>
+    <sprite>sprites\tree_3</sprite>
+    <sprite>sprites\tree_4_</sprite>
+    <sprite>sprites\Tress</sprite>
     <sprite>sprites\Forest</sprite>
+    <sprite>sprites\grass_3</sprite>
+    <sprite>sprites\grasss_2</sprite>
     <sprite>sprites\Grass</sprite>
+    <sprite>sprites\explotion</sprite>
+    <sprite>sprites\explition_2</sprite>
+    <sprite>sprites\tanque_destrui</sprite>
+    <sprite>sprites\Explotion_3</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
