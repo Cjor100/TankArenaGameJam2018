@@ -40,6 +40,8 @@
     <sprite>sprites\explotion</sprite>
     <sprite>sprites\explition_2</sprite>
     <sprite>sprites\tanque_destrui</sprite>
+    <sprite>sprites\destroyed_tank_3</sprite>
+    <sprite>sprites\destroyed_tank_2</sprite>
     <sprite>sprites\Explotion_3</sprite>
   </sprites>
   <backgrounds name="background"/>
