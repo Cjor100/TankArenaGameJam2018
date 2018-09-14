@@ -131,6 +131,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_win</room>
     <room>rooms\room_menu</room>
     <room>rooms\room_credits</room>
     <room>rooms\room_tutorial</room>
@@ -139,7 +140,6 @@
       <room>rooms\room_map1</room>
       <room>rooms\room_map2</room>
       <room>rooms\room_map3</room>
-      <room>rooms\room_win</room>
     </rooms>
   </rooms>
   <help>

@@ -55,13 +55,18 @@ draw_set_valign(fa_middle); //Sets up verticle allignment
 draw_set_font(font_gameOver); //Sets up the selected font
 draw_set_color(c_black); // Sets the font color
 
-draw_text(250, 200, "YOU WIN!");
+draw_text(300, 200, "YOU WIN!");
 
 draw_set_font(font_menu);
 
 draw_text(100, 500, "Press [ESC] to quit.");
 draw_text(100, 550, "Press [Shift] to return to the main menu.");
 draw_text(100, 600, "Press [Enter] to play again");
+
+if(global.flawless == 3){
+draw_text(400, 300, "Flawless Victory!");
+draw_text(125, 350, "You completed every level without taking any damage!");
+}
 </string>
           </argument>
         </arguments>

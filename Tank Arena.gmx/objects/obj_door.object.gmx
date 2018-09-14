@@ -58,6 +58,9 @@ tutChange = true;
 if(tutChange){
 room_goto(room_menu);
 }else{
+if(global.playerHP == 100){
+global.flawless++;
+}
 room_goto_next();
 }
 }

@@ -61,7 +61,7 @@ if(leaveGame == 1){ game_end();}
 
 if(instance_number(obj_bot) == 0){ global.unlocked = true;} //Switch this to be the next Room/Arena
 
-if(keyboard_check_released(ord('C'))){ global.playerHP-=10;}
+if(keyboard_check_released(ord('C'))){ global.playerHP = 100;}
 
 if(global.playerHP &lt;= 0){ room_goto(room_game_over);}
 </string>
