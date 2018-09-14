@@ -16,8 +16,15 @@
     <sound>sound\sound_idle2</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\sprite_menu_select</sprite>
-    <sprites name="debug">
+    <sprites name="Mechanics">
+      <sprite>sprites\sprite_menu_select</sprite>
+      <sprite>sprites\sprite_bullet</sprite>
+      <sprites name="Hatch">
+        <sprite>sprites\sprite_hatch_closed</sprite>
+        <sprite>sprites\sprite_hatch_open</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Debug">
       <sprite>sprites\sprite_bot_debug</sprite>
       <sprite>sprites\sprite_bot_centered_debug</sprite>
       <sprite>sprites\sprite_nav_node</sprite>
@@ -25,7 +32,6 @@
       <sprite>sprites\sprite_player_debug</sprite>
       <sprite>sprites\sprite_door</sprite>
     </sprites>
-    <sprite>sprites\Bullet</sprite>
     <sprites name="Player">
       <sprite>sprites\sprite_player</sprite>
       <sprite>sprites\sprite_player_moving</sprite>
@@ -37,6 +43,41 @@
     <sprites name="Tank">
       <sprite>sprites\sprite_tank_moving_base</sprite>
       <sprite>sprites\sprite_tank_base</sprite>
+    </sprites>
+    <sprites name="Obsticles">
+      <sprites name="Street">
+        <sprite>sprites\sprite_building1</sprite>
+        <sprite>sprites\sprite_building2</sprite>
+        <sprite>sprites\sprite_building3</sprite>
+        <sprite>sprites\sprite_building4</sprite>
+        <sprite>sprites\sprite_building5</sprite>
+      </sprites>
+      <sprites name="Cave">
+        <sprite>sprites\sprite_rock1</sprite>
+        <sprite>sprites\sprite_rock2</sprite>
+        <sprite>sprites\sprite_rock3</sprite>
+        <sprite>sprites\sprite_rock4</sprite>
+        <sprite>sprites\sprite_rock5</sprite>
+        <sprite>sprites\sprite_rock6</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Floor">
+      <sprites name="Cave">
+        <sprite>sprites\sprite_cave1</sprite>
+        <sprite>sprites\sprite_cave2</sprite>
+        <sprite>sprites\sprite_cave3</sprite>
+        <sprite>sprites\sprite_cave4</sprite>
+      </sprites>
+      <sprites name="Forest">
+        <sprite>sprites\sprite_grass1</sprite>
+        <sprite>sprites\sprite_grass2</sprite>
+      </sprites>
+      <sprites name="Street">
+        <sprite>sprites\sprite_street1</sprite>
+        <sprite>sprites\sprite_street2</sprite>
+        <sprite>sprites\sprite_street3</sprite>
+        <sprite>sprites\sprite_street4</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
