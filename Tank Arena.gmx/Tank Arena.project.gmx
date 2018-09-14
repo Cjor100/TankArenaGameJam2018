@@ -5,15 +5,7 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites">
-    <sprites name="Tank">
-      <sprite>sprites\sprite_tank_turret</sprite>
-      <sprite>sprites\Bullet</sprite>
-      <sprite>sprites\down_part_</sprite>
-      <sprite>sprites\environment</sprite>
-      <sprite>sprites\environment_2</sprite>
-    </sprites>
-  </sprites>
+  <sprites name="sprites"/>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <help>
