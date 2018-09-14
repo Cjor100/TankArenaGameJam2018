@@ -47,7 +47,11 @@
       <sprite>sprites\sprite_tank_base</sprite>
       <sprite>sprites\sprite_damaged</sprite>
       <sprite>sprites\sprite_damaged_bot</sprite>
-      <sprite>sprites\sprite_destroyed_tank</sprite>
+      <sprites name="Destroyed">
+        <sprite>sprites\sprite_destroyed_tank1</sprite>
+        <sprite>sprites\sprite_destroyed_tank2</sprite>
+        <sprite>sprites\sprite_destroyed_tank3</sprite>
+      </sprites>
     </sprites>
     <sprites name="Obsticles">
       <sprites name="Street">

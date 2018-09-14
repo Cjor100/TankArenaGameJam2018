@@ -7,10 +7,10 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>8</bbox_left>
-  <bbox_right>55</bbox_right>
-  <bbox_top>4</bbox_top>
-  <bbox_bottom>60</bbox_bottom>
+  <bbox_left>0</bbox_left>
+  <bbox_right>60</bbox_right>
+  <bbox_top>7</bbox_top>
+  <bbox_bottom>61</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -20,6 +20,6 @@
   <width>64</width>
   <height>64</height>
   <frames>
-    <frame index="0">images\sprite_destroyed_tank_0.png</frame>
+    <frame index="0">images\sprite_destroyed_tank2_0.png</frame>
   </frames>
 </sprite>
