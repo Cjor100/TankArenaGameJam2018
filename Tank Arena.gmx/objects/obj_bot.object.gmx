@@ -3,7 +3,7 @@
   <spriteName>sprite_bot_debug</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -107,6 +107,8 @@ path = path_add()
             <kind>1</kind>
             <string>audio_stop_sound(sound_idle2)
 audio_stop_sound(sound_move2)
+instance_create(x,y,obj_destroyed)
+(instance_nearest(x,y,obj_destroyed)).image_angle=image_angle
 </string>
           </argument>
         </arguments>
@@ -235,6 +237,7 @@ if (distance_to_object(obj_player)&lt;10)
                 y+=5
             }
         global.playerHP -= 1;
+        botHP-=5;
     }
 </string>
           </argument>
@@ -565,13 +568,13 @@ if (mp_grid_path(grid,path,x,y,mx,my,1))
             <kind>1</kind>
             <string>draw_self()
 if (botHP==100)
-    draw_sprite_ext(sprite_damaged,0,x,y,1,1,image_angle,c_white,1)
-if (botHP==75)
-    draw_sprite_ext(sprite_damaged,1,x,y,1,1,image_angle,c_white,1)
-if (botHP==50)
-    draw_sprite_ext(sprite_damaged,2,x,y,1,1,image_angle,c_white,1)
-if (botHP==25)
-    draw_sprite_ext(sprite_damaged,3,x,y,1,1,image_angle,c_white,1)
+    draw_sprite_ext(sprite_damaged_bot,0,x,y,1,1,image_angle,c_white,1)
+if (botHP&lt;=75)
+    draw_sprite_ext(sprite_damaged_bot,1,x,y,1,1,image_angle,c_white,1)
+if (botHP&lt;=50)
+    draw_sprite_ext(sprite_damaged_bot,2,x,y,1,1,image_angle,c_white,1)
+if (botHP&lt;=25)
+    draw_sprite_ext(sprite_damaged_bot,3,x,y,1,1,image_angle,c_white,1)
 </string>
           </argument>
         </arguments>

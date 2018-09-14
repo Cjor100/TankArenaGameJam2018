@@ -7,10 +7,10 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>0</bbox_left>
-  <bbox_right>57</bbox_right>
-  <bbox_top>0</bbox_top>
-  <bbox_bottom>63</bbox_bottom>
+  <bbox_left>14</bbox_left>
+  <bbox_right>50</bbox_right>
+  <bbox_top>6</bbox_top>
+  <bbox_bottom>50</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -21,5 +21,16 @@
   <height>64</height>
   <frames>
     <frame index="0">images\sprite_building5_0.png</frame>
+    <frame index="1">images\sprite_building5_1.png</frame>
+    <frame index="2">images\sprite_building5_2.png</frame>
+    <frame index="3">images\sprite_building5_3.png</frame>
+    <frame index="4">images\sprite_building5_4.png</frame>
+    <frame index="5">images\sprite_building5_5.png</frame>
+    <frame index="6">images\sprite_building5_6.png</frame>
+    <frame index="7">images\sprite_building5_7.png</frame>
+    <frame index="8">images\sprite_building5_8.png</frame>
+    <frame index="9">images\sprite_building5_9.png</frame>
+    <frame index="10">images\sprite_building5_10.png</frame>
+    <frame index="11">images\sprite_building5_11.png</frame>
   </frames>
 </sprite>

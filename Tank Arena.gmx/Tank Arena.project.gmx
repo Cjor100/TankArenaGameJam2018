@@ -23,6 +23,7 @@
       <sprites name="Hatch">
         <sprite>sprites\sprite_hatch_closed</sprite>
         <sprite>sprites\sprite_hatch_open</sprite>
+        <sprite>sprites\sprite_explosion</sprite>
       </sprites>
     </sprites>
     <sprites name="Debug">
@@ -45,6 +46,8 @@
       <sprite>sprites\sprite_tank_moving_base</sprite>
       <sprite>sprites\sprite_tank_base</sprite>
       <sprite>sprites\sprite_damaged</sprite>
+      <sprite>sprites\sprite_damaged_bot</sprite>
+      <sprite>sprites\sprite_destroyed_tank</sprite>
     </sprites>
     <sprites name="Obsticles">
       <sprites name="Street">
@@ -62,6 +65,12 @@
         <sprite>sprites\sprite_rock5</sprite>
         <sprite>sprites\sprite_rock6</sprite>
       </sprites>
+      <sprites name="Forest">
+        <sprite>sprites\sprite_tree1</sprite>
+        <sprite>sprites\sprite_tree2</sprite>
+        <sprite>sprites\sprite_tree3</sprite>
+        <sprite>sprites\sprite_tree4</sprite>
+      </sprites>
     </sprites>
     <sprites name="Floor">
       <sprites name="Cave">
@@ -73,6 +82,8 @@
       <sprites name="Forest">
         <sprite>sprites\sprite_grass1</sprite>
         <sprite>sprites\sprite_grass2</sprite>
+        <sprite>sprites\sprite_grass3</sprite>
+        <sprite>sprites\sprite_grass4</sprite>
       </sprites>
       <sprites name="Street">
         <sprite>sprites\sprite_street1</sprite>
@@ -95,6 +106,7 @@
   <objects name="objects">
     <objects name="Bot">
       <object>objects\obj_bot</object>
+      <object>objects\obj_destroyed</object>
       <object>objects\obj_nav_node</object>
       <object>objects\obj_bot_bullet</object>
     </objects>
