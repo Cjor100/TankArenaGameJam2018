@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>playerKills = 0; //How many kills the player has
 global.playerHP = 100; //Tracks the players health
+respect = false;
 audio_stop_sound(sound_menu_music)
 audio_stop_sound(sound_move1)
 audio_stop_sound(sound_move2)
@@ -61,9 +62,38 @@ if(leaveGame == 1){ game_end();}
 
 if(instance_number(obj_bot) == 0){ global.unlocked = true;} //Switch this to be the next Room/Arena
 
+if(global.playerHP &lt;= 0){ room_goto(room_game_over);}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Cheat code 1: Press [C] for full health
 if(keyboard_check_released(ord('C'))){ global.playerHP = 100;}
 
-if(global.playerHP &lt;= 0){ room_goto(room_game_over);}
+//Cheat code 2: Press [8] for instant death
+if(keyboard_check_released(ord('8'))){ global.playerHP = 0;}
+
+//Cheat code 3: Press [L] for instant enemy death
+if(keyboard_check_released(ord('L'))){ obj_bot.botHP = 0;}
+
+//Cheat code 4: Press [F] to pay respects
+if(keyboard_check_released(ord('F'))){ respect = true;}
 </string>
           </argument>
         </arguments>
@@ -118,7 +148,10 @@ health_player_y = (obj_player.y + 50);
 draw_set_color(c_black);
 draw_text(health_player_x-88, health_player_y-4, "HP:");
 draw_healthbar(health_player_x-32,health_player_y-10,health_player_x+32,health_player_y+3,global.playerHP,c_black,c_red,c_green,0,true,true);
-
+if(respect){
+draw_set_color(c_red);
+draw_text(300,50,"Player payed repects.");
+}
 </string>
           </argument>
         </arguments>
