@@ -134,6 +134,7 @@
     <objects name="Mechanics">
       <object>objects\obj_hatch</object>
       <object>objects\mech_obj</object>
+      <object>objects\obj_explosion</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_player</object>

@@ -107,6 +107,7 @@ path = path_add()
             <kind>1</kind>
             <string>audio_stop_sound(sound_idle2)
 audio_stop_sound(sound_move2)
+instance_create(x,y,obj_explosion)
 instance_create(x,y,obj_destroyed)
 (instance_nearest(x,y,obj_destroyed)).image_angle=image_angle
 </string>
