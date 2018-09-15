@@ -236,8 +236,12 @@ if (distance_to_object(obj_player)&lt;10)
                 path_end()
                 y+=5
             }
+        if(global.monsterTank == false){
+        botHP-=1;
         global.playerHP -= 1;
-        botHP-=5;
+        }else{
+        botHP-=20;
+        }
     }
 </string>
           </argument>
