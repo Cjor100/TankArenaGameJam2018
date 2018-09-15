@@ -38,6 +38,10 @@
     <sprites name="Player">
       <sprite>sprites\sprite_player</sprite>
       <sprite>sprites\sprite_player_moving</sprite>
+      <sprites name="Monster Tank">
+        <sprite>sprites\sprite_player_monster</sprite>
+        <sprite>sprites\sprite_player_monster_moving</sprite>
+      </sprites>
     </sprites>
     <sprites name="Bot">
       <sprite>sprites\sprite_bot</sprite>
