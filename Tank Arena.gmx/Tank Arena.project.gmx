@@ -23,6 +23,7 @@
       <sprite>sprites\sprite_explosion</sprite>
       <sprites name="Hatch">
         <sprite>sprites\sprite_hatch_closed</sprite>
+        <sprite>sprites\sprite_hatch_animation</sprite>
         <sprite>sprites\sprite_hatch_open</sprite>
       </sprites>
     </sprites>
@@ -38,7 +39,7 @@
     <sprites name="Player">
       <sprite>sprites\sprite_player</sprite>
       <sprite>sprites\sprite_player_moving</sprite>
-      <sprites name="Monster Tank">
+      <sprites name="Monster Mode">
         <sprite>sprites\sprite_player_monster</sprite>
         <sprite>sprites\sprite_player_monster_moving</sprite>
       </sprites>
@@ -46,6 +47,10 @@
     <sprites name="Bot">
       <sprite>sprites\sprite_bot</sprite>
       <sprite>sprites\sprite_bot_moving</sprite>
+      <sprites name="Monster Mode">
+        <sprite>sprites\sprite_bot_monster_moving</sprite>
+        <sprite>sprites\sprite_bot_monster</sprite>
+      </sprites>
     </sprites>
     <sprites name="Tank">
       <sprite>sprites\sprite_tank_moving_base</sprite>
@@ -101,6 +106,8 @@
         <sprite>sprites\sprite_street4</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\sprite_sound_off</sprite>
+    <sprite>sprites\sprite_sound_on</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -130,8 +137,10 @@
       <object>objects\obj_menu</object>
       <object>objects\obj_credits</object>
       <object>objects\obj_win</object>
+      <object>objects\obj_sound_button</object>
     </objects>
     <objects name="Mechanics">
+      <object>objects\obj_hatch_animation</object>
       <object>objects\obj_hatch</object>
       <object>objects\mech_obj</object>
       <object>objects\obj_explosion</object>
