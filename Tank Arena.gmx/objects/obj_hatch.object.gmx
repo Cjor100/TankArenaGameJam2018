@@ -3,7 +3,7 @@
   <spriteName>sprite_hatch</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>3</depth>
+  <depth>2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -34,6 +34,8 @@ tutChange = true;
 }
 
 sprite_index = sprite_hatch_closed
+
+animation=false
 </string>
           </argument>
         </arguments>
@@ -57,7 +59,12 @@ sprite_index = sprite_hatch_closed
           <argument>
             <kind>1</kind>
             <string>if(global.unlocked){
-sprite_index = sprite_hatch_open
+sprite_index = sprite_hatch_open  
+if animation==false
+    {
+    instance_create(x,y,obj_hatch_animation)
+    animation=true
+    }   
 }
 if (distance_to_object(obj_player)&lt;10)
 {
