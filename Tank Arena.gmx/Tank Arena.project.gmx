@@ -106,6 +106,8 @@
         <sprite>sprites\sprite_street4</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\sprite_sound_off</sprite>
+    <sprite>sprites\sprite_sound_on</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -135,6 +137,7 @@
       <object>objects\obj_menu</object>
       <object>objects\obj_credits</object>
       <object>objects\obj_win</object>
+      <object>objects\obj_sound_button</object>
     </objects>
     <objects name="Mechanics">
       <object>objects\obj_hatch_animation</object>
