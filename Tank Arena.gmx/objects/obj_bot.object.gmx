@@ -222,7 +222,7 @@ room_goto_next();
 //Movement
 if (global.monsterTank)
     {
-        if (hspeed=0 &amp;&amp; vspeed=0)
+        if (path=-1)
             sprite_index = sprite_bot_monster
         else
             sprite_index = sprite_bot_monster_moving
@@ -231,7 +231,7 @@ if (global.monsterTank)
     }
 else
     {
-        if (hspeed=0 &amp;&amp; vspeed=0)
+        if (path=-1)
             sprite_index = sprite_bot
         else
             sprite_index = sprite_bot_moving

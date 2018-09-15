@@ -39,6 +39,7 @@ down = false;
 right = false;
 
 timer = 0;
+alarm[0]=2
 
 //Movement
 attempt_right=false
@@ -229,69 +230,6 @@ for (D=0; D&lt;16; D++)//Down raytrace
             }
     }
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (global.monsterTank)
-    {
-        if (player_direction=0)//Right
-            {
-                instance_create(x-24,y+20,obj_smoke)
-                instance_create(x-24,y-20,obj_smoke) 
-            }
-        if (player_direction=45)//Right-Up
-            {
-                instance_create(x-2,y+30,obj_smoke)
-                instance_create(x-30,y+2,obj_smoke)
-            }
-        if (player_direction=90)//Up
-            {
-                instance_create(x-20,y+24,obj_smoke)
-                instance_create(x+20,y+24,obj_smoke) 
-            }
-        if (player_direction=135)//Up-Left
-            {
-                instance_create(x+2,y+30,obj_smoke)
-                instance_create(x+30,y+2,obj_smoke)
-            }
-        if (player_direction=180)//Left
-            {
-                instance_create(x+24,y+20,obj_smoke)
-                instance_create(x+24,y-20,obj_smoke) 
-            }
-        if (player_direction=225)//Down-Left
-            {
-                instance_create(x+30,y-2,obj_smoke)
-                instance_create(x+2,y-30,obj_smoke)
-            }
-        if (player_direction=270)//Down
-            {
-                instance_create(x-20,y-24,obj_smoke)
-                instance_create(x+20,y-24,obj_smoke) 
-            }
-        if (player_direction=315)//Down-Right
-            {
-                instance_create(x-2,y-30,obj_smoke)
-                instance_create(x-30,y-2,obj_smoke)
-            }
-    }
 </string>
           </argument>
         </arguments>

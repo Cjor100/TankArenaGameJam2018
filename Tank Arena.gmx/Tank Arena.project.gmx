@@ -20,7 +20,6 @@
       <sprite>sprites\sprite_menu_select</sprite>
       <sprite>sprites\sprite_bullet</sprite>
       <sprite>sprites\sprite_tracer</sprite>
-      <sprite>sprites\sprite_smoke</sprite>
       <sprite>sprites\sprite_explosion</sprite>
       <sprites name="Hatch">
         <sprite>sprites\sprite_hatch_closed</sprite>
@@ -130,7 +129,6 @@
     <objects name="Miscellaneous ">
       <object>objects\obj_wall</object>
       <object>objects\obj_tracer</object>
-      <object>objects\obj_smoke</object>
       <object>objects\obj_floor</object>
     </objects>
     <objects name="Menu">
