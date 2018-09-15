@@ -32,7 +32,7 @@
       <sprite>sprites\sprite_nav_node</sprite>
       <sprite>sprites\sprite_wall_debug</sprite>
       <sprite>sprites\sprite_player_debug</sprite>
-      <sprite>sprites\sprite_door</sprite>
+      <sprite>sprites\sprite_hatch</sprite>
       <sprite>sprites\sprite_floor_debug</sprite>
     </sprites>
     <sprites name="Player">
@@ -132,7 +132,7 @@
       <object>objects\obj_win</object>
     </objects>
     <objects name="Mechanics">
-      <object>objects\obj_door</object>
+      <object>objects\obj_hatch</object>
       <object>objects\mech_obj</object>
     </objects>
     <objects name="Player">
