@@ -76,9 +76,6 @@
         <sprite>sprites\sprite_tree3</sprite>
         <sprite>sprites\sprite_tree4</sprite>
       </sprites>
-      <sprites name="door">
-        <sprite>sprites\sprite_door1</sprite>
-      </sprites>
     </sprites>
     <sprites name="Floor">
       <sprites name="Cave">

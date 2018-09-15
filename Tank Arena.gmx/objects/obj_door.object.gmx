@@ -32,6 +32,8 @@ current_room = room_get_name(room);
 if(current_room == "room_tutorial"){
 tutChange = true;
 }
+
+sprite_index = sprite_hatch_closed
 </string>
           </argument>
         </arguments>
