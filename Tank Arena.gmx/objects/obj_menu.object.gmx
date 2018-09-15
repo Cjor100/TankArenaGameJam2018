@@ -40,6 +40,7 @@ audio_stop_sound(sound_idle1)
 audio_stop_sound(sound_idle2)
 
 global.flawless = 0;
+global.monsterTank = false;
 
 if !audio_is_playing(sound_menu_music)
             audio_play_sound(sound_menu_music,1,true)

@@ -94,6 +94,13 @@ if(keyboard_check_released(ord('L'))){ obj_bot.botHP = 0;}
 
 //Cheat code 4: Press [F] to pay respects
 if(keyboard_check_released(ord('F'))){ respect = true;}
+
+//Cheat code 5: Press [M] to initiate MONSTER TANK
+if(global.monsterTank == false){
+if(keyboard_check_released(ord('M'))){ global.monsterTank = true;}
+} else{
+if(keyboard_check_released(ord('M'))){ global.monsterTank = false;}
+}
 </string>
           </argument>
         </arguments>
@@ -148,9 +155,17 @@ health_player_y = (obj_player.y + 50);
 draw_set_color(c_black);
 draw_text(health_player_x-88, health_player_y-4, "HP:");
 draw_healthbar(health_player_x-32,health_player_y-10,health_player_x+32,health_player_y+3,global.playerHP,c_black,c_red,c_green,0,true,true);
+
+//Cheat code [F]:
 if(respect){
 draw_set_color(c_red);
-draw_text(300,50,"Player payed repects.");
+draw_text(320,80,"Player payed repects.");
+}
+
+//Cheat code [M]:
+if(global.monsterTank){
+draw_set_color(c_red);
+draw_text(health_player_x-80, health_player_y+15, "Monster Mode");
 }
 </string>
           </argument>
