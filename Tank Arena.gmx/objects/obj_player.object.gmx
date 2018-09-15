@@ -3,7 +3,7 @@
   <spriteName>sprite_player_debug</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -249,10 +249,49 @@ for (D=0; D&lt;16; D++)//Down raytrace
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if (hspeed=0 &amp;&amp; vspeed=0)
-    sprite_index = sprite_player
-else
-    sprite_index = sprite_player_moving*/ 
+            <string>if (global.monsterTank)
+    {
+        if (player_direction=0)//Right
+            {
+                instance_create(x-24,y+20,obj_smoke)
+                instance_create(x-24,y-20,obj_smoke) 
+            }
+        if (player_direction=45)//Right-Up
+            {
+                instance_create(x-2,y+30,obj_smoke)
+                instance_create(x-30,y+2,obj_smoke)
+            }
+        if (player_direction=90)//Up
+            {
+                instance_create(x-20,y+24,obj_smoke)
+                instance_create(x+20,y+24,obj_smoke) 
+            }
+        if (player_direction=135)//Up-Left
+            {
+                instance_create(x+2,y+30,obj_smoke)
+                instance_create(x+30,y+2,obj_smoke)
+            }
+        if (player_direction=180)//Left
+            {
+                instance_create(x+24,y+20,obj_smoke)
+                instance_create(x+24,y-20,obj_smoke) 
+            }
+        if (player_direction=225)//Down-Left
+            {
+                instance_create(x+30,y-2,obj_smoke)
+                instance_create(x+2,y-30,obj_smoke)
+            }
+        if (player_direction=270)//Down
+            {
+                instance_create(x-20,y-24,obj_smoke)
+                instance_create(x+20,y-24,obj_smoke) 
+            }
+        if (player_direction=315)//Down-Right
+            {
+                instance_create(x-2,y-30,obj_smoke)
+                instance_create(x-30,y-2,obj_smoke)
+            }
+    }
 </string>
           </argument>
         </arguments>
