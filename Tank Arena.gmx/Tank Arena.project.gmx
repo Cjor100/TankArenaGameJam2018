@@ -20,10 +20,10 @@
       <sprite>sprites\sprite_menu_select</sprite>
       <sprite>sprites\sprite_bullet</sprite>
       <sprite>sprites\sprite_tracer</sprite>
+      <sprite>sprites\sprite_explosion</sprite>
       <sprites name="Hatch">
         <sprite>sprites\sprite_hatch_closed</sprite>
         <sprite>sprites\sprite_hatch_open</sprite>
-        <sprite>sprites\sprite_explosion</sprite>
       </sprites>
     </sprites>
     <sprites name="Debug">
