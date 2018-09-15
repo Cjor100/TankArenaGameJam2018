@@ -36,6 +36,17 @@
         }
     }
 }
+if (instance_number(obj_floor)==0)
+{
+    //Setup navigation grid
+    for (a=0; a&lt;12; a++)
+    {
+        for (b=0; b&lt;16; b++)
+        {
+            instance_create(64*b,64*a,obj_floor)
+        }
+    }
+}
 if (instance_number(mech_obj)==0)
     {
         instance_create(x,y,mech_obj)
