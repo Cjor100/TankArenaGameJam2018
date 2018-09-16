@@ -56,9 +56,9 @@
     <instance objName="obj_wall" x="64" y="0" name="inst_66848D94" locked="0" code="sprite_index = sprite_rock2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="64" y="64" name="inst_70F4BF0A" locked="0" code="sprite_index = sprite_rock3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="192" name="inst_8409943C" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="0" y="256" name="inst_4FA9CE59" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="0" y="320" name="inst_61141623" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="0" y="384" name="inst_0FFEF35A" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="0" y="256" name="inst_4FA9CE59" locked="0" code="sprite_index = sprite_rock1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="0" y="320" name="inst_61141623" locked="0" code="sprite_index = sprite_rock2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="0" y="384" name="inst_0FFEF35A" locked="0" code="sprite_index = sprite_rock3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="448" name="inst_E2D065F3" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="512" name="inst_C003F36F" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="576" name="inst_3C53F60C" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -72,14 +72,14 @@
     <instance objName="obj_wall" x="128" y="64" name="inst_6C2EDEF5" locked="0" code="sprite_index = sprite_rock6&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="192" y="704" name="inst_7F1656A5" locked="0" code="sprite_index = sprite_rock6&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="256" y="320" name="inst_497C0D88" locked="0" code="sprite_index = sprite_rock6&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="320" y="320" name="inst_78907791" locked="0" code="sprite_index = sprite_rock3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="320" y="320" name="inst_78907791" locked="0" code="sprite_index = sprite_tree1" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="384" y="320" name="inst_B6A3C535" locked="0" code="sprite_index = sprite_rock3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="448" y="320" name="inst_996B68B0" locked="0" code="sprite_index = sprite_rock3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="576" y="320" name="inst_F1280A8C" locked="0" code="sprite_index = sprite_rock3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="512" y="320" name="inst_DB09097F" locked="0" code="sprite_index = sprite_rock3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="640" y="320" name="inst_8006AB1A" locked="0" code="sprite_index = sprite_rock3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="768" y="320" name="inst_B948201C" locked="0" code="sprite_index = sprite_rock6&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="704" y="320" name="inst_E247A78B" locked="0" code="sprite_index = sprite_rock3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="704" y="320" name="inst_E247A78B" locked="0" code="sprite_index = sprite_tree2" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="320" y="384" name="inst_F1CD9231" locked="0" code="sprite_index = sprite_rock6&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="512" y="384" name="inst_D9D7903F" locked="0" code="sprite_index = sprite_rock6&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="512" y="448" name="inst_AEED21A2" locked="0" code="sprite_index = sprite_rock1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -88,31 +88,31 @@
     <instance objName="obj_wall" x="896" y="0" name="inst_966F3ED2" locked="0" code="sprite_index = sprite_rock2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="960" y="0" name="inst_E568E474" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="960" y="64" name="inst_8A4A3F1C" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="896" y="64" name="inst_32ABF67A" locked="0" code="sprite_index = sprite_rock3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="896" y="64" name="inst_32ABF67A" locked="0" code="sprite_index = sprite_tree3" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="960" y="128" name="inst_82BCB34E" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="960" y="192" name="inst_45EEA000" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="960" y="256" name="inst_FE2159B4" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="960" y="320" name="inst_7CC56179" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="960" y="384" name="inst_88150568" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="960" y="256" name="inst_FE2159B4" locked="0" code="sprite_index = sprite_rock3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="960" y="320" name="inst_7CC56179" locked="0" code="sprite_index = sprite_rock3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="960" y="384" name="inst_88150568" locked="0" code="sprite_index = sprite_rock2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="960" y="448" name="inst_70DA1C09" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="960" y="512" name="inst_23D90FFA" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="960" y="576" name="inst_B029EF8E" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="960" y="640" name="inst_2A099478" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="960" y="704" name="inst_4BAA74A2" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="896" y="704" name="inst_2FB25F14" locked="0" code="sprite_index = sprite_rock2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="896" y="640" name="inst_18FBCC5E" locked="0" code="sprite_index = sprite_rock3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="896" y="640" name="inst_18FBCC5E" locked="0" code="sprite_index = sprite_tree4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="832" y="704" name="inst_C1501714" locked="0" code="sprite_index = sprite_rock3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="832" y="64" name="inst_576CBF42" locked="0" code="sprite_index = sprite_rock6&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="896" y="128" name="inst_70D111DA" locked="0" code="sprite_index = sprite_rock6&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="832" y="640" name="inst_C7BAF405" locked="0" code="sprite_index = sprite_rock6&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="896" y="576" name="inst_445BBFEF" locked="0" code="sprite_index = sprite_rock6&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="832" y="64" name="inst_576CBF42" locked="0" code="sprite_index = sprite_tree1" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="896" y="128" name="inst_70D111DA" locked="0" code="sprite_index = sprite_tree2" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="832" y="640" name="inst_C7BAF405" locked="0" code="sprite_index = sprite_tree1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="896" y="576" name="inst_445BBFEF" locked="0" code="sprite_index = sprite_tree3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="768" y="704" name="inst_6E504E21" locked="0" code="sprite_index = sprite_rock6&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hatch" x="448" y="704" name="inst_7D996ABA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bot" x="704" y="704" name="inst_742A513A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="320" y="256" name="inst_5CF61E80" locked="0" code="sprite_index = sprite_rock6&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="512" y="256" name="inst_317254B5" locked="0" code="sprite_index = sprite_rock6&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="320" y="256" name="inst_5CF61E80" locked="0" code="sprite_index = sprite_tree2" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="512" y="256" name="inst_317254B5" locked="0" code="sprite_index = sprite_tree3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="512" y="192" name="inst_372BBD79" locked="0" code="sprite_index = sprite_rock1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="704" y="256" name="inst_97110E0C" locked="0" code="sprite_index = sprite_rock6&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="704" y="256" name="inst_97110E0C" locked="0" code="sprite_index = sprite_rock6" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="512" y="0" name="inst_3D671116" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bot" x="512" y="704" name="inst_07F90D13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="128" name="inst_59E56873" locked="0" code="sprite_index = sprite_rock4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
